@@ -1,0 +1,54 @@
+//start personal
+.personal
+   .personal__data
+      .personal__img(role="img")
+      .personal__form.form
+         h6.heading.personal__heading Редактировать личные данные
+         form.form__main
+            p Электронная почта
+               .input-wrap.form__email-wrap.is-disabled
+                  +inputError
+                  input.input-text.form__email(type="email" disabled value="alex@skidka.ua")
+            p Имя
+               .input-wrap.form__name-wrap
+                  +inputError
+                  input.input-text.form__name(type="text" value="Александр"  placeholder="Имя")
+               .input-wrap.form__surname-wrap
+                  +inputError
+                  input.input-text.form__surname(type="text" value="Атаманенко" placeholder="Фамилия")
+            p Телефон
+               .input-wrap.form__tel-wrap
+                  +inputError
+                  input.input-text.form__tel(type="tel" placeholder="(___) - ___ - __ - __")
+            p Смена пароля
+               .input-wrap.form__pass-wrap
+                  +inputError
+                  input.input-text.form__pass(type="text" placeholder="Старый пароль")
+               .input-wrap.form__pass-repeat-wrap
+                  +inputError
+                  input.input-text.form__pass-repeat(type="text" placeholder="Новый пароль")
+               .input-wrap.form__pass-repeat-wrap
+                  +inputError
+                  input.input-text.form__pass-repeat(type="text" placeholder="Повторите новый пароль")
+
+            input.btn.form__submit.personal__btn(type="submit" value="Сохранить изменения")
+
+
+   .personal__address
+      h6.heading.personal__heading Адреса доставки:
+         a.link.personal__add-address(href="#") Добавить новый адрес
+
+      .personal__address-item.edit-item
+         p.personal__address-text.edit-item__text 'Киев, Днепровская набережная 15, кв 335'
+         .edit-item__edit-block
+            a.solid-link.edit-item__edit(href="#") Рекдактировать
+            a.solid-link.edit-item__main.is-active(href="#") Основной
+            a.solid-link.edit-item__del(href="#") Удалить
+
+      .personal__address-item.edit-item
+         p.personal__address-text.edit-item__text Киев, Вышгородская 31, кв 15
+         .edit-item__edit-block
+            a.solid-link.edit-item__edit(href="#") Рекдактировать
+            a.solid-link.edit-item__main(href="#") Сделать основным
+            a.solid-link.edit-item__del(href="#") Удалить
+//end personal

@@ -1,0 +1,69 @@
+//start
+.bank
+   .bank__data
+      .bank__img(role="img")
+      .bank__form
+         h6.heading.bank__heading Зарегистрируйте свою карту, чтобы получать на нее выплаты!
+         form.bank__form.form
+            p Тип карты
+            .bank__cards-wrap
+               .bank__card.bank__card_visa
+                  input(id="visa-card" type="radio" class="radio" name="reviews__category-list")
+                  label(for="visa-card" class="radio-label bank__label")
+               .bank__card.bank__card_master
+                  input(id="visa-master" type="radio" class="radio" name="reviews__category-list")
+                  label(for="visa-master" class="radio-label bank__label")
+
+            p Номер карты
+            .input-wrap.form__card-wrap
+               +inputError
+               input.input-text.form__card(type="text" placeholder="")
+            p Срок действия
+            .bank__validity-wrap
+               .bank__month-wrap
+                  span.bank__month.js-text 12
+                  select.bank__month-select
+                     option 1
+                     option 2
+                     option 3
+                     option 4
+                     option 5
+                     option(selected) 12
+               span.bank__separator /
+
+               .bank__year-wrap
+                  span.bank__year.js-text 2016
+                  select.bank__year-select
+                     option 2017
+                     option 2018
+                     option 2019
+                     option 2020
+                     option 2021
+                     option(selected) 2016
+
+            p CVV:
+            .bank__cvv-wrap
+               input.input-text.form__cvv(type="text" placeholder="___")
+               a.link.bank__form-link(href="#") Что это?
+               +hint('bank__form-hint')
+            p Имя, Фамилия владельца
+               .input-wrap.form__name-wrap
+                  +inputError
+                  input.input-text.form__name(type="text" placeholder="")
+
+            input.btn.form__submit.form__submit_fl(type="submit" value="Сохранить карту")
+
+
+
+   .bank__manage
+      h6.heading.bank__heading Мои карты
+
+      .edit-item
+         p.bank__card-text.edit-item__text 5578 7897 5555 5558
+         .edit-item__edit-block
+            a.solid-link.edit-item__edit(href="#") Рекдактировать
+            a.solid-link.edit-item__main(href="#") Сделать основной
+            a.solid-link.edit-item__del(href="#") Удалить
+
+
+//start

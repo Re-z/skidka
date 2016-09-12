@@ -1,0 +1,29 @@
+//start cashback
+.cashback
+           .cashback__header
+               .cashback__block.cashback__block_left
+                   .cashback__block-img.cashback__block-img_status(role="img")
+                   h6.heading.cashback__heading Состояние CashBack счета
+                       +hint('cashback__hint')
+                   span.ammount.cashback__block-ammount 1 874 #[span.ammount__cur грн]
+
+
+
+               .cashback__block.cashback__block_right
+                   .cashback__block-img.cashback__block-img_friends(role="img")
+                   h6.heading.cashback__heading Доступный бонус от покупок друзей
+                       +hint('cashback__hint')
+                   span.ammount.cashback__block-ammount 50 #[span.ammount__cur грн]
+
+           .cashback__widthdraw
+               h6.heading.cashback__heading Доступно для вывода на карту:
+                   span.ammount.cashback__widthdraw-ammount 1 924 #[span.ammount__cur грн]
+               a.btn.cashback__widthdraw-btn(href="") Вывести на карту
+               +hint('cashback__widthdraw-hint')
+
+           footer.cashback__hint-box
+               p.cashback__hint-box-text
+                   | Если вы сделали покупку, но она не появилась в списке “История покупок и кэшбэк”, не волнуйтесь, она должна появиться в течении 20 дней. Вы получите письмо на e-mail после зачисления кэшбэк. Если прошло более 20 дней, пожалуйста свяжитесь с нами
+                   a.cashback__hint-box-link(href="#")  через специальную форму
+                   | ,указав информацию о покупке. Мы решим этот вопрос максимально быстро.
+//end cashback

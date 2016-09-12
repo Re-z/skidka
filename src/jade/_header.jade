@@ -1,0 +1,22 @@
+//start header
+header.header
+  .header__inner
+      button.schedule-btn Режим работы
+
+      nav.nav
+          - var nav = ["Доставка", "Оплата", "Гарантия и сервис ", "Контакты"]
+          ul
+              each item in nav
+                  li: a(href="#", title="#{item}")=item
+      a.cabinet-btn(href="#") Личный кабинет
+      .schedule
+          .schedule__item
+              h6.subtitle.call-center-ico Call-центр:
+              p.schedule__text Понедельник - воскресенье
+              p.schedule__text с 9:00 до 21:00
+          .schedule__item
+              h6.subtitle.service-ico Сервисный отдел:
+              p.schedule__text Понедельник - пятница
+              p.schedule__text с 9:00 до 18:00
+          .schedule__close.close
+    //end header

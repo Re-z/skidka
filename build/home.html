@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css"><link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--start header-->
+    <header class="header">
+      <div class="header__inner">
+        <button class="schedule-btn">Режим работы</button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" title="Доставка">Доставка</a></li>
+            <li><a href="#" title="Оплата">Оплата</a></li>
+            <li><a href="#" title="Гарантия и сервис ">Гарантия и сервис </a></li>
+            <li><a href="#" title="Контакты">Контакты</a></li>
+          </ul>
+        </nav><a href="#" class="cabinet-btn">Личный кабинет</a>
+        <div class="schedule">
+          <div class="schedule__item">
+            <h6 class="subtitle call-center-ico">Call-центр:</h6>
+            <p class="schedule__text">Понедельник - воскресенье</p>
+            <p class="schedule__text">с 9:00 до 21:00</p>
+          </div>
+          <div class="schedule__item">
+            <h6 class="subtitle service-ico">Сервисный отдел:</h6>
+            <p class="schedule__text">Понедельник - пятница</p>
+            <p class="schedule__text">с 9:00 до 18:00</p>
+          </div>
+          <div class="schedule__close close"></div>
+        </div>
+      </div>
+      <!--end header-->
+    </header>
+    <!--start intro-->
+    <section class="intro">
+      <div class="intro__inner"><a href="index.html" title="" class="logo"></a>
+        <div class="tel">
+          <p class="tel__main">(044) 495-71-90
+            <button class="tel__arrow"></button>
+          </p>
+          <button class="tel__callback link">Перезвоните мне</button>
+          <div class="tel__popup">
+            <p class="tel-number tel-number_city">(044) 233 76 90</p>
+            <p class="tel-number tel-number_life">(044) 233 76 90</p>
+            <p class="tel-number tel-number_kyivstar">(044) 233 76 90</p>
+          </div>
+          <div class="callback">
+            <h6 class="callback__title subtitle">Заказ обратного звонка</h6>
+            <p class="callback__text">Оставьте номер вашего телефона и наш оператор перезвонит вам в течении часа.</p>
+            <form class="callback__form"></form>
+            <p>Ваше имя:</p>
+            <div class="input-wrap is-error callback__name-wrap">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+              <input type="text" class="callback__name input-text">
+            </div>
+            <p>Ваш телефон: <span class="required">*</span></p>
+            <div class="input-wrap is-error">
+              <p class="input-error-text">Поле необходимо заполнить</p><span>+38</span>
+              <input pattern="^[ 0-9]+$" type="tel" required placeholder="(___) ___- __-__" class="callback__tel input-text">
+            </div>
+            <input type="submit" value="Жду звонка" class="callback__submit btn">
+            <div class="callback__close close"></div>
+          </div>
+        </div>
+        <form class="search">
+          <div class="input-wrap search__query-wrap">
+            <p class="input-error-text">Поле необходимо заполнить</p>
+            <input type="text" placeholder="Поиск товаров" class="search__query input-text">
+          </div>
+          <input type="submit" value="Найти" class="search__submit btn">
+        </form>
+        <div class="in-cart">
+          <p class="in-cart__title">В корзине</p>
+          <p class="in-cart__text">1 товар - 18 799 грн</p>
+          <p class="in-cart__text is-empty">на сумму 0 грн</p><a href="#" title="Оформить заказ" class="link">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+    <!--end intro-->
+    <!--start menu-->
+    <section class="menu">
+      <div class="menu__inner-wrap">
+        <div class="menu__inner">
+          <ul class="menu__list">
+            <li class="menu__item"><span class="menu__trigger">Все товары</span></li>
+            <li class="menu__item"><span class="menu__trigger">Мобильные</span></li>
+            <li class="menu__item"><span class="menu__trigger menu__trigger_technic">Бытовая техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Аудио-видео техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Магазины с CashBack</span></li>
+            <li class="menu__item"><span class="menu__trigger">Пригласи друга</span></li>
+            <li class="menu__item"><span class="menu__trigger is-active">Акции</span></li>
+          </ul>
+          <!--start dropdown-->
+          <div class="dropdown">
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Аппараты для газирования">Аппараты для газирования</a></li>
+                  <li><a href="#" title="Аэрогрили">Аэрогрили</a></li>
+                  <li><a href="#" title="Блендеры">Блендеры</a></li>
+                  <li><a href="#" title="Бутербродницы">Бутербродницы</a></li>
+                  <li><a href="#" title="Вафельницы">Вафельницы</a></li>
+                  <li><a href="#" title="Весы кухонные">Весы кухонные</a></li>
+                  <li><a href="#" title="Грили">Грили</a></li>
+                  <li><a href="#" title="Йогуртницы и мороженицы">Йогуртницы и мороженицы</a></li>
+                  <li><a href="#" title="Кофеварки">Кофеварки</a></li>
+                  <li><a href="#" title="Кофемолки">Кофемолки</a></li>
+                  <li><a href="#" title="Кулеры для воды">Кулеры для воды</a></li>
+                  <li><a href="#" title="Кухонные комбайны">Кухонные комбайны</a></li>
+                  <li><a href="#" title="Ломтерезки">Ломтерезки</a></li>
+                  <li><a href="#" title="Маринаторы">Маринаторы</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Миксеры">Миксеры</a></li>
+                  <li><a href="#" title="Мультиварки">Мультиварки</a></li>
+                  <li><a href="#" title="Мясорубки">Мясорубки</a></li>
+                  <li><a href="#" title="Настольные плиты">Настольные плиты</a></li>
+                  <li><a href="#" title="Пароварки">Пароварки</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col"><a href="#" title="" style="background-image: url(https://placebear.com/240/450)" class="dropdown__banner"></a></div>
+          </div>
+        </div>
+      </div>
+      <!--end dropdown-->
+    </section>
+    <!--end menu-->
+        <section class="hint-block"></section>
+        <div class="hint-block__inner-wrap">
+          <div class="hint-block__inner"><a href="#" title="test" class="hint-block__text">На Вашем Сashback счету 1 578 грн</a></div>
+        </div>
+    <!--start slider-wrap-->
+    <section class="slider-wrap">
+      <div class="slider-wrap__inner">
+            <div class="slider">
+              <button class="prev slider__prev"></button>
+              <button class="next slider__next"></button>
+              <div class="slider__content"><a href="#" title="" style="background-image: url(img/slider-item.png)" class="slider__item"></a><a href="#" title="" style="background-image: url(https://placebear.com/960/200)" class="slider__item"></a><a href="#" title="" style="background-image: url(https://placebear.com/960/265)" class="slider__item"></a><a href="#" title="" style="background-image: url(https://placebear.com/960/265)" class="slider__item"></a></div>
+            </div><a href="#" title="" class="discount-banner"></a>
+      </div>
+    </section>
+    <!--end slider-wrap-->
+    <!--start brands-->
+    <section class="brands">
+      <div class="brands__inner">
+        <h4 class="title">Популярные магазины с CashBack</h4>
+        <div class="brands__slider">
+          <button class="prev brands__prev"></button>
+          <button class="next brands__next"></button>
+          <div class="brands__content">
+            <!--adding brands--><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo ali"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">1%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo carters"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo victoria"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo gymboree"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo lamoda"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo oldnavy"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo wallmart"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a><a href="" title="" class="brands__item">
+                          <div role="img" class="brands__logo ali"></div>
+                          <p class="brands__cashback">CashBack:</p><span class="brands__cashback-ammount">5%</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end brands-->
+    <!--start discounts-->
+    <section class="discounts">
+      <div class="discounts__inner">
+        <h4 class="title">Супер скидки! <a href="#" title="" class="link discounts__more">Показать все</a></h4>
+        <div class="discounts__slider">
+          <button class="prev discounts__prev"></button>
+          <button class="next discounts__next"></button>
+          <div class="discounts__content">
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end discounts-->
+    <!--start recomends-->
+    <section class="recomends">
+      <div class="recomends__inner">
+        <h4 class="title">Скидка рекомендует <a href="#" title="" class="link discounts__more">Показать все</a></h4>
+        <div class="recomends__slider">
+          <button class="next recomends__next"></button>
+          <button class="prev recomends__prev"></button>
+          <div class="recomends__content">
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+                <div class="item">
+                  <button class="close item__close"></button>
+                  <div class="item__inner">
+                    <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                    <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                    <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                    <div class="item__row item__row_rating">
+                      <div class="item__stars-wrap">
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                        <div class="rating-item"></div>
+                      </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                    </div>
+                    <div class="item__row item__row_m0">
+                      <p class="item__price">19 787 <span>грн</span></p>
+                      <button class="item__buy btn">Купить</button>
+                    </div>
+                    <div class="item__row">
+                      <p class="item__code">код 789789</p>
+                      <p class="item__avaliability">есть в наличии</p>
+                    </div>
+                    <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                      <p class="item__prices">1 099 - 25 789 грн</p>
+                    </footer>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end recomends-->
+    <!--start why-us-->
+    <section class="why-us">
+      <div class="why-us__inner">
+        <h4 class="title">Наши преимущества</h4>
+        <div class="why-us__cert"></div>
+        <div class="why-us__discount"></div>
+        <div class="why-us__guarantee"></div>
+        <div class="why-us__credit"></div>
+      </div>
+    </section>
+    <!--end why-us-->
+    <!--start guarantees-->
+    <section class="guarantees">
+      <div class="guarantees__inner">
+        <h4 class="title guarantees__title">Мы гарантируем</h4>
+        <div class="guarantees__box">
+          <ul class="guarantees__list">
+            <li>Лучшие товары по лучшим ценам – <strong>более 6000 единиц</strong> электроники в наличии по лучшим ценам!</li>
+            <li>Качественная доставка – доставляем любой товар в срок по Украине без <strong>предоплаты</strong></li>
+            <li>24 часа online – Прием заказов через корзину <strong>24 часа в сутки.</strong> Отправка заказа в течении 12 часов. Обработка заказав в рабочие часы в течении 15 минут</li>
+            <li><strong>Официальная гарантия</strong>  – только от официальных представителей на территории Украины</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--end guarantees-->
+    <!--start footer-->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col footer__col_shop">
+          <h6 class="subtitle">О магазине</h6>
+          <ul class="footer__list">
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Все контакты</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+          <p class="footer__subtext">© 2008–2013 группа компаний IPC</p>
+          <p class="footer__subtext">© Skidka — зарегистрированный <br> товарный знак</p>
+        </div>
+        <div class="footer__col footer__col_buyer">
+          <h6 class="subtitle">Покупателю</h6>
+          <ul class="footer__list">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия и сервис</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Дисконтная программа</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Статьи и обзоры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col_subscr">
+          <h6 class="subtitle">Узнайте о новостях первым</h6>
+          <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+          <form class="footer__subscription">
+            <div class="footer__email-wrap input-wrap">
+              <input type="email" placeholder="Ваша электронная почта" class="footer__email input-text">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+            </div>
+            <input type="submit" value="Готово" class="footer__subscription-submit btn">
+          </form>
+          <h6 class="subtitle">Мы в социальных сетях</h6>
+          <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+          <!--ul.socials-->
+          <!--    each item in socials-->
+          <!--        li-->
+          <!--            a(class="footer__#{item}" href="#", title="#{item}")-->
+              <ul class="socials">
+                <li><a href="#" title="vk" class="socials__vk"></a></li>
+                <li><a href="#" title="goo" class="socials__goo"></a></li>
+                <li><a href="#" title="fb" class="socials__fb"></a></li>
+              </ul>
+        </div>
+        <div class="footer__col">
+          <h6 class="subtitle">Магазинам</h6>
+          <ul class="footer__list">
+            <li><a href="#" title="О сервисе">О сервисе</a></li>
+            <li><a href="#" title="Платное продвижение">Платное продвижение</a></li>
+            <li><a href="#" title="Продвижение и сервис">Продвижение и сервис</a></li>
+            <li><a href="#" title="Описание XML">Описание XML</a></li>
+            <li><a href="#" title="Обратная связь">Обратная связь</a></li>
+          </ul>
+          <p class="footer__text footer__text_smaler">Дизайн сайта <a href="#" title="" class="footer__link">StylePix</a></p>
+          <p class="footer__text footer__text_smaler">Разработка <a href="#" title="" class="footer__link">OWOX</a></p>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+  </body>
+  <script src="js/app.js" async></script>
+</html>

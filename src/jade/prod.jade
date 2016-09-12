@@ -1,0 +1,59 @@
+extends _layout
+block title
+   title prod
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.prod
+      +card
+      .prod__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+            li: a(href="#") Аудио-видео техника
+            li: a(href="#") 3D LED телевизоры
+         h4.title.prod__title 3D LED телевизор Samsung UE40F8000ATXUA
+         span.prod__this-code код 789789
+         .prod__content
+            .tabs
+               button.tabs__tab.main-trig.is-active Основное
+               button.tabs__tab.item-chars-trig Характеристики
+               button.tabs__tab.descr-trig Описание
+               button.tabs__tab.recalls-trig Отзывы
+               button.tabs__tab.all-trig Все цены в Интернет-магазинах
+               button.tabs__tab.also-trig Аксессуары
+
+            .prod__blocks-holder
+               include _prod-main
+               include _prod-item-chars
+               include _prod-recalls
+               include _prod-descr
+               include _prod-all
+               include _prod-also
+
+            include _recently
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      include _footer
+
+

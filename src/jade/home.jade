@@ -1,0 +1,107 @@
+extends _layout
+block title
+   title Home
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('На Вашем Сashback счету 1 578 грн')
+
+
+
+   //start slider-wrap
+   section.slider-wrap
+         .slider-wrap__inner
+             +slider
+             a.discount-banner(href="#" title="")
+   //end slider-wrap
+   //start brands
+   section.brands
+     .brands__inner
+         h4.title Популярные магазины с CashBack
+
+         .brands__slider
+             button.prev.brands__prev
+             button.next.brands__next
+             .brands__content
+                 //adding brands
+                 mixin brandsItem(className, cashBack)
+                     a.brands__item(href="" title="")
+                         .brands__logo(class=className role="img")
+                         p.brands__cashback CashBack:
+                         span.brands__cashback-ammount=cashBack + '%'
+
+                 +brandsItem('ali', 1)
+                 +brandsItem('carters', 5)
+                 +brandsItem('victoria', 5)
+                 +brandsItem('gymboree', 5)
+                 +brandsItem('lamoda', 5)
+                 +brandsItem('oldnavy', 5)
+                 +brandsItem('wallmart', 5)
+                 +brandsItem('ali', 5)
+   //end brands
+   //start discounts
+   section.discounts
+     .discounts__inner
+         h4.title Супер скидки! #[a(class="link discounts__more" href="#" title="") Показать все]
+         .discounts__slider
+             button.prev.discounts__prev
+             button.next.discounts__next
+             .discounts__content
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+   //end discounts
+
+   //start recomends
+   section.recomends
+     .recomends__inner
+         h4.title Скидка рекомендует #[a(class="link discounts__more" href="#" title="") Показать все]
+         .recomends__slider
+             button.next.recomends__next
+             button.prev.recomends__prev
+             .recomends__content
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+                 +item
+    //end recomends
+
+   //start why-us
+   section.why-us
+     .why-us__inner
+         h4.title Наши преимущества
+         .why-us__cert
+         .why-us__discount
+         .why-us__guarantee
+         .why-us__credit
+   //end why-us
+
+   //start guarantees
+   section.guarantees
+     .guarantees__inner
+         h4.title.guarantees__title Мы гарантируем
+         .guarantees__box
+             ul.guarantees__list
+                 li Лучшие товары по лучшим ценам – <strong>более 6000 единиц</strong> электроники в наличии по лучшим ценам!
+                 li Качественная доставка – доставляем любой товар в срок по Украине без <strong>предоплаты</strong>
+                 li 24 часа online – Прием заказов через корзину <strong>24 часа в сутки.</strong> Отправка заказа в течении 12 часов. Обработка заказав в рабочие часы в течении 15 минут
+                 li <strong>Официальная гарантия</strong>  – только от официальных представителей на территории Украины
+   //end guarantees
+
+   include _footer
+
+
+
+
+

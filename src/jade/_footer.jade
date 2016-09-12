@@ -1,0 +1,57 @@
+//start footer
+footer.footer
+  .footer__inner
+      .footer__col.footer__col_shop
+          h6.subtitle О магазине
+          ul.footer__list
+              - var footerList1 = ['Сертификаты', 'Вакансии', 'Все контакты', 'Обратная связь']
+                  each item in footerList1
+                      li: a(href="#")=item
+
+
+
+          p.footer__subtext © 2008–2013 группа компаний IPC
+          p.footer__subtext © Skidka — зарегистрированный <br> товарный знак
+      .footer__col.footer__col_buyer
+          h6.subtitle Покупателю
+          ul.footer__list
+              - var footerList2 = ['Доставка', 'Оплата', 'Гарантия и сервис', 'Кредит', 'Дисконтная программа', 'Акции', 'Новости', 'Статьи и обзоры']
+              each item in footerList2
+                  li: a(href="#")=item
+
+
+
+
+
+      .footer__col.footer__col_subscr
+          h6.subtitle Узнайте о новостях первым
+          p.footer__text.footer__text_margin Подпишитесь на рассылку новостей и скидок
+          form.footer__subscription
+              .footer__email-wrap.input-wrap
+                  input.footer__email.input-text(type="email" placeholder="Ваша электронная почта")
+                  p.input-error-text Поле необходимо заполнить
+              input.footer__subscription-submit.btn(type="submit" value="Готово")
+          h6.subtitle Мы в социальных сетях
+          p.footer__text.footer__text_margin Подпишитесь на рассылку новостей и скидок
+
+          //- var socials = ["vk", "goo", "fb"]
+          //ul.socials
+          //    each item in socials
+          //        li
+          //            a(class="footer__#{item}" href="#", title="#{item}")
+          +socials
+      .footer__col
+          h6.subtitle Магазинам
+          ul.footer__list
+              - var footerList3 = ['О сервисе',  'Платное продвижение', 'Продвижение и сервис', 'Описание XML', 'Обратная связь']
+              each item in footerList3
+                  li: a(href="#" title=item )=item
+          p.footer__text.footer__text_smaler Дизайн сайта #[a(class="footer__link" href="#" title="") StylePix]
+          p.footer__text.footer__text_smaler Разработка #[a(class="footer__link" href="#" title="") OWOX]
+
+
+
+
+
+
+//end footer

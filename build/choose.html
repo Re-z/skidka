@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>choose</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css"><link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--start header-->
+    <header class="header">
+      <div class="header__inner">
+        <button class="schedule-btn">Режим работы</button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" title="Доставка">Доставка</a></li>
+            <li><a href="#" title="Оплата">Оплата</a></li>
+            <li><a href="#" title="Гарантия и сервис ">Гарантия и сервис </a></li>
+            <li><a href="#" title="Контакты">Контакты</a></li>
+          </ul>
+        </nav><a href="#" class="cabinet-btn">Личный кабинет</a>
+        <div class="schedule">
+          <div class="schedule__item">
+            <h6 class="subtitle call-center-ico">Call-центр:</h6>
+            <p class="schedule__text">Понедельник - воскресенье</p>
+            <p class="schedule__text">с 9:00 до 21:00</p>
+          </div>
+          <div class="schedule__item">
+            <h6 class="subtitle service-ico">Сервисный отдел:</h6>
+            <p class="schedule__text">Понедельник - пятница</p>
+            <p class="schedule__text">с 9:00 до 18:00</p>
+          </div>
+          <div class="schedule__close close"></div>
+        </div>
+      </div>
+      <!--end header-->
+    </header>
+    <!--start intro-->
+    <section class="intro">
+      <div class="intro__inner"><a href="index.html" title="" class="logo"></a>
+        <div class="tel">
+          <p class="tel__main">(044) 495-71-90
+            <button class="tel__arrow"></button>
+          </p>
+          <button class="tel__callback link">Перезвоните мне</button>
+          <div class="tel__popup">
+            <p class="tel-number tel-number_city">(044) 233 76 90</p>
+            <p class="tel-number tel-number_life">(044) 233 76 90</p>
+            <p class="tel-number tel-number_kyivstar">(044) 233 76 90</p>
+          </div>
+          <div class="callback">
+            <h6 class="callback__title subtitle">Заказ обратного звонка</h6>
+            <p class="callback__text">Оставьте номер вашего телефона и наш оператор перезвонит вам в течении часа.</p>
+            <form class="callback__form"></form>
+            <p>Ваше имя:</p>
+            <div class="input-wrap is-error callback__name-wrap">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+              <input type="text" class="callback__name input-text">
+            </div>
+            <p>Ваш телефон: <span class="required">*</span></p>
+            <div class="input-wrap is-error">
+              <p class="input-error-text">Поле необходимо заполнить</p><span>+38</span>
+              <input pattern="^[ 0-9]+$" type="tel" required placeholder="(___) ___- __-__" class="callback__tel input-text">
+            </div>
+            <input type="submit" value="Жду звонка" class="callback__submit btn">
+            <div class="callback__close close"></div>
+          </div>
+        </div>
+        <form class="search">
+          <div class="input-wrap search__query-wrap">
+            <p class="input-error-text">Поле необходимо заполнить</p>
+            <input type="text" placeholder="Поиск товаров" class="search__query input-text">
+          </div>
+          <input type="submit" value="Найти" class="search__submit btn">
+        </form>
+        <div class="in-cart">
+          <p class="in-cart__title">В корзине</p>
+          <p class="in-cart__text">1 товар - 18 799 грн</p>
+          <p class="in-cart__text is-empty">на сумму 0 грн</p><a href="#" title="Оформить заказ" class="link">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+    <!--end intro-->
+    <!--start menu-->
+    <section class="menu">
+      <div class="menu__inner-wrap">
+        <div class="menu__inner">
+          <ul class="menu__list">
+            <li class="menu__item"><span class="menu__trigger">Все товары</span></li>
+            <li class="menu__item"><span class="menu__trigger">Мобильные</span></li>
+            <li class="menu__item"><span class="menu__trigger menu__trigger_technic">Бытовая техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Аудио-видео техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Магазины с CashBack</span></li>
+            <li class="menu__item"><span class="menu__trigger">Пригласи друга</span></li>
+            <li class="menu__item"><span class="menu__trigger is-active">Акции</span></li>
+          </ul>
+          <!--start dropdown-->
+          <div class="dropdown">
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Аппараты для газирования">Аппараты для газирования</a></li>
+                  <li><a href="#" title="Аэрогрили">Аэрогрили</a></li>
+                  <li><a href="#" title="Блендеры">Блендеры</a></li>
+                  <li><a href="#" title="Бутербродницы">Бутербродницы</a></li>
+                  <li><a href="#" title="Вафельницы">Вафельницы</a></li>
+                  <li><a href="#" title="Весы кухонные">Весы кухонные</a></li>
+                  <li><a href="#" title="Грили">Грили</a></li>
+                  <li><a href="#" title="Йогуртницы и мороженицы">Йогуртницы и мороженицы</a></li>
+                  <li><a href="#" title="Кофеварки">Кофеварки</a></li>
+                  <li><a href="#" title="Кофемолки">Кофемолки</a></li>
+                  <li><a href="#" title="Кулеры для воды">Кулеры для воды</a></li>
+                  <li><a href="#" title="Кухонные комбайны">Кухонные комбайны</a></li>
+                  <li><a href="#" title="Ломтерезки">Ломтерезки</a></li>
+                  <li><a href="#" title="Маринаторы">Маринаторы</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Миксеры">Миксеры</a></li>
+                  <li><a href="#" title="Мультиварки">Мультиварки</a></li>
+                  <li><a href="#" title="Мясорубки">Мясорубки</a></li>
+                  <li><a href="#" title="Настольные плиты">Настольные плиты</a></li>
+                  <li><a href="#" title="Пароварки">Пароварки</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col"><a href="#" title="" style="background-image: url(https://placebear.com/240/450)" class="dropdown__banner"></a></div>
+          </div>
+        </div>
+      </div>
+      <!--end dropdown-->
+    </section>
+    <!--end menu-->
+        <section class="hint-block"></section>
+        <div class="hint-block__inner-wrap">
+          <div class="hint-block__inner"><a href="#" title="test" class="hint-block__text">Получить скидочную карту</a></div>
+        </div>
+    <section class="choose">
+          <div class="card"><a href="#" class="card__img"></a>
+            <button class="card__close"></button>
+          </div>
+      <div class="choose__inner">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Аудио-видео техника</a></li>
+        </ul>
+        <h4 class="title choose__title">3D LED телевизоры</h4>
+        <div class="choose__main">
+          <aside class="choose__aside">
+            <div class="ch-added">
+              <h6 class="ch-added__title block-name">Добавлено к сравнению</h6>
+                            <div class="ch-added__row">
+                              <button class="delete ch-added__delete"></button><img src="img/small-item-img.png" class="ch-added__img"><a href="#" class="ch-added__link blue-link">Телевизор <br> Samsung UE78HU9000</a>
+                            </div>
+                            <div class="ch-added__row">
+                              <button class="delete ch-added__delete"></button><img src="img/small-item-img.png" class="ch-added__img"><a href="#" class="ch-added__link blue-link">Телевизор <br> Samsung UE78HU9000</a>
+                            </div>
+                            <div class="ch-added__row">
+                              <button class="delete ch-added__delete"></button><img src="img/small-item-img.png" class="ch-added__img"><a href="#" class="ch-added__link blue-link">Телевизор <br> Samsung UE78HU9000</a>
+                            </div>
+              <div class="ch-added__btns-wrap">
+                <button class="action-btn ch-added__compare">Сравнить</button>
+                <button class="link">Очистить</button>
+              </div>
+            </div>
+            <div class="choosed choose__choosed">
+              <h6 class="block-name choosed__block-name">Вы выбрали</h6>
+                            <div class="choosed__row">
+                              <button class="delete choosed__delete"></button>
+                              <p class="choosed__key">Цена:<span class="choosed__value">1258 - 100 000</span></p>
+                            </div>
+                            <div class="choosed__row">
+                              <button class="delete choosed__delete"></button>
+                              <p class="choosed__key">Производитель:<span class="choosed__value">Samsung</span></p>
+                            </div>
+                            <div class="choosed__row">
+                              <button class="delete choosed__delete"></button>
+                              <p class="choosed__key">Диагональ экрана:<span class="choosed__value">22&quot;</span></p>
+                            </div>
+              <button class="choosed__reset-btn link">Сбросить фильтры</button>
+            </div>
+            <div class="params choose__params">
+              <h6 class="block-name params__block-name">Подбор по параметрам</h6>
+              <div class="params__range-wrap">
+                <p class="params__text">Цена грн:</p>
+                <div id="range" class="params__range"></div>
+                <div class="params__range-row"><span></span>
+                  <input type="text" placeholder="1258" class="input-text params__range-value"><span></span>
+                  <input type="text" placeholder="100 000" class="input-text params__range-value">
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="js/app.js" async></script>
+</html>

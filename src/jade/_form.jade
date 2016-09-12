@@ -1,0 +1,23 @@
+//start form
+.form
+   h6.heading Форма обратной связи
+   form.form__main
+      p Имя
+      .input-wrap.form__name-wrap
+         +inputError
+         input.input-text.form__name(type="text" placeholder="Имя")
+      .input-wrap.form__surname-wrap
+         +inputError
+         input.input-text.form__surname(type="text" placeholder="Фамилия")
+      p Электронная почта #[span(class="required") *]
+      .input-wrap.form__email-wrap
+         +inputError
+         input.input-text.form__email(type="email")
+      p Телефон
+         .input-wrap.form__tel-wrap
+            +inputError
+            input.input-text.form__tel(type="tel" placeholder="(___) - ___ - __ - __")
+      p Ваше сообщение
+         textarea.form__textarea.textarea
+      input.btn.form__submit(type="submit" value="Отправить сообщение")
+//end form

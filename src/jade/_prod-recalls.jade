@@ -1,0 +1,35 @@
+//start recalls
+.recalls
+	.recalls__title-wrap
+		h6.title Отзывы #[span.recalls__number (15) ]
+		+sortBtn('recalls_sort-btns', 'По полезности', 'По новизне' )
+		a.link.recalls__add(href="#") Написать отзыв
+	.recalls__content
+		.recalls__item
+			.recalls__item-details
+				.recalls__rating
+					.rating-item
+					.rating-item
+					.rating-item
+					.rating-item
+					.rating-item
+				i.bought-ico.recalls__bought
+				p.recalls__item-author Анна
+				p.recalls__item-date 23.10.2014
+			.recalls__item-box
+				.recalls__item-content
+					p Добрый день. Возможность приобретения данной модели в кредит на сегодняшний день отсутствует. Мы можем предложит приобретение данной модели за наличный расчет. Для оформления заказа в интернет-магазине, у Вас есть возможность нажать кнопку "Купить", обратиться на нашу горячую линию 0-800-300-100 или Вы можете отправить письмо с контактными данными на e-shop@allo.ua. Спасибо Вам за обращение. Всего доброго. Обращайтесь. С уважением, эксперт Анна
+				.recalls__item-row
+					a.link.recalls__reply(href="#") Ответить
+					.recalls__useful-wrap
+						span.recalls__useful-quest Полезен ли отзыв?
+						.recalls__yes-wrap
+							a.recalls__yes(href="#") Да
+							span.recalls__yes-number (5)
+						.recalls__no-wrap
+							a.recalls__no(href="#") Нет
+							span.recalls__no-number (0)
+
+		a.recalls__more.link(href="#") Еще 14 отзывов
+
+//end recalls

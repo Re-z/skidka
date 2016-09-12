@@ -1,0 +1,67 @@
+extends _layout
+block title
+   title contacts
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.reviews
+      +card
+      .reviews__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+         h4.title.reviews__title Статьи и обзоры
+         .reviews__content
+            aside.reviews__aside
+               ul.reviews__category-list
+                  li
+                     input(type="radio" id="articles__1" name="reviews__category-list" class="radio" checked)
+                     label(for="articles__1" class="radio-label") Все материалы
+                     a(href="#") (72)
+                  li
+                     input(type="radio" id="articles__2" name="reviews__category-list" class="radio")
+                     label(for="articles__2" class="radio-label") Новости компании
+                     a(href="#") (12)
+                  li
+                     input(type="radio" id="articles__3" name="reviews__category-list" class="radio")
+                     label(for="articles__3" class="radio-label") Советы по выбору техники
+                     a(href="#") (12)
+                  li
+                     input(type="radio" id="articles__4" name="reviews__category-list" class="radio")
+                     label(for="articles__4" class="radio-label") Обзор новинок
+                     a(href="#") (12)
+                  li
+                     input(type="radio" id="articles__5" name="reviews__category-list" class="radio")
+                     label(for="articles__5" class="radio-label") Новости рынка
+                     a(href="#") (12)
+               .subscr
+                  h6.heading.subscr__heading Подпишитесь сейчас
+                  p Узнайте о новых акциях первым
+                  .input-wrap.subscr__name-wrap
+                     +inputError
+                     input(type="text" placeholder="Ваше имя").input-text
+                  .input-wrap.subscr__email-wrap
+                     +inputError
+                     input(type="email" placeholder="Ваша електронная почта").input-text
+                  input.btn.subscr__submit(type="submit" value="Подписаться")
+                  h6.heading.subscr__heading Мы в социальных сетях
+                  +socials('subscr__socials')
+
+
+            .reviews__articles
+
+               +article('Как выбрать телевизор?')
+               +article('Как выбрать холодильник?')
+               +article('Как правильно выбрать шампунь')
+               +article('Что важнее бальзам или кондиционер')
+               +article('Как выбрать соковыжималку?')
+
+
+               +pagination
+
+   include _footer

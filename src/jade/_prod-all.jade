@@ -1,0 +1,51 @@
+//start all
+.all
+   h4.title Все цены на Samsung UE40F8000ATXUA
+   .all__table
+      .all__head-row
+         .all__head-cell.all__cell_source Магазин
+         .all__head-cell.all__cell_offer Предложение
+         .all__head-cell.all__cell_special Спецпредложения
+         .all__head-cell.all__cell_del Доставка
+         .all__head-cell.all__cell_evac Самовывоз
+         .all__head-cell.all__cell_price Цена
+
+
+      mixin allRow(source, price)
+         .all__row
+            .all__cell.all__cell_source
+               .all__rating
+                  .rating-item
+                  .rating-item
+                  .rating-item
+                  .rating-item
+                  .rating-item
+               a.blue-link.all__source-link(href="#")=source
+
+            .all__cell.all__cell_offer
+               .product.all__product
+                  .product__img(role="img")
+                  .product__text-wrap
+                     p Samsung UE40F8000ATXUA
+                     span.product__code код 789789
+
+            .all__cell.all__cell_special
+               p.all__special &mdash;
+
+            .all__cell.all__cell_del
+               p.all__del-price 30 грн
+               p.all__del-date 5 ноября
+
+            .all__cell.all__cell_evac
+               p.all__evac-items 4 пункта
+
+            .all__cell.all__cell_price
+               p.all__price=price
+                  span грн
+               a.btn.all__buy-btn(href="#") Купить
+
+
+      +allRow('Rozetka', '19 787')
+      +allRow('Fotos', '18 500')
+
+//end all

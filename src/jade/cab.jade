@@ -1,0 +1,60 @@
+
+extends _layout
+block title
+   title cab
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.cab
+      +card
+      .cab__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+         h4.title Мой кабинет
+         .cab__heading
+            .cashback-status
+               h6.heading.cashback-status__title Состояние CashBack счета
+               p.cashback-status__sum 1 874 #[span грн]
+               a.btn.cashback-status__details(href='#') Детально
+         .cab__content
+            .cab__tabs-wrap
+               .cab__tabs.tabs
+                  button.tabs__tab.personal-trig.is-active Личные данные
+                  button.tabs__tab.cashback-trig Кэшбэк
+                  button.tabs__tab.history-trig История покупок
+                  button.tabs__tab.wishlist-trig Список желаний
+                  button.tabs__tab.bank-trig Моя банковская карта
+                  a.action-btn.cab__logout(href="#") Выйти из кабинета
+
+             .personal__blocks-holder
+
+               include  _cab-personal
+               include _cab-cashback
+               include _cab-history
+               include _cab-wishlist
+               include _cab-bank
+
+
+
+
+
+
+
+      include _footer
+
+
+
+
+
+
+
+
+
+
+

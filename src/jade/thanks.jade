@@ -1,0 +1,108 @@
+extends _layout
+block title
+	title thanks
+
+
+
+block content
+	include _header
+	include _intro
+	include _menu
+	+hint-block('Получить скидочную карту')
+
+	section.thanks
+		+card
+		.thanks__inner
+			ul.breadcrumbs
+				li: a(href="#") Главная
+			h4.title Спасибо за покупку
+			.thanks__content
+				.thanks__img(role='img')
+				.thanks__box
+					h6.heading.thanks__heading Спасибо за ваш заказ. Мы свяжемся с вами в ближайшее время.
+					p.thanks__text Ожидайте, скоро с вами свяжется менеджер магазина, чтобы выбрать
+						br
+						| удобное для вас время доставки
+					.thanks__row
+						.thanks__number-wrap
+							p.thanks__number-text Номер Вашего заказа:
+								span.thanks__number 478 787 787
+						.print.thanks__print
+							i.print-ico
+							a(href="#").link.print__link Распечатать
+					.cheks
+						.check.thanks__check
+							h6.heading.check__heading Чек rozetka.ua
+
+							mixin checkItem(className, itemName, itemPrice)
+								.check__item(class=className)
+									.check__product
+										.check__img(role="img")
+										.check__text-wrap
+											a.check__product-name(href="#")=itemName
+											span.check__code код 789789
+									.check__amount-wrap
+										span.chack__amount 1 шт.
+									.check__price-wrap
+										span.check__price=itemPrice
+										span.check__currency грн
+
+
+
+
+							+checkItem('', 'Samsung UE40F8000ATXUA', '19 787')
+							+checkItem('check__item_last', 'Фотоаппарат Nikon D3200 18-55VR Kit', '10 000')
+							.check__cashback-wrap
+								span.check__cashback-text Возвращаем
+								+hint('check__hint')
+
+								.check__price-wrap
+									span.check__price 780
+									span.check__currency грн
+
+							.check__total-wrap
+								span.check__total-text Cумма:
+								.check__price-wrap
+									span.check__price 29 787
+									span.check__currency грн
+
+						.check.thanks__check
+							h6.heading.check__heading Чек fotos.ua
+							+checkItem('check__item_last', 'Samsung UE40F8000ATXUA', '19 787')
+							.check__cashback-wrap
+								span.check__cashback-text Возвращаем
+								+hint('check__hint')
+
+								.check__price-wrap
+									span.check__price 780
+									span.check__currency грн
+
+							.check__total-wrap
+								span.check__total-text Cумма:
+								.check__price-wrap
+									span.check__price 29 787
+									span.check__currency грн
+
+					.checks__total-wrap
+						span.checks__total-text Итого к оплате:
+						.checks__price-wrap
+							span.checks__total-price 49 574
+							span.checks__total-currency грн
+
+					.checks__cashback-wrap
+						span.checks__cashback-text Возвращаем
+						+hint('check__hint')
+						.checks__price-wrap
+							span.checks__price 1560
+							span.checks__currency грн
+
+
+			include _recently
+
+		include _footer
+
+
+
+
+
+

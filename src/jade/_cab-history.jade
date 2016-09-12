@@ -1,0 +1,137 @@
+//start history
+.history
+   .history__inner
+
+      mixin historyItem(className, statusText)
+
+         .history__item(class=className)
+            header.history__head
+               .history__intro
+                  button.history__toggler
+                  a(href="#").history__number Заказ №03646721
+                  p.history__sum На сумму 18 546 грн
+                  p.history__date 16.02.2015  00:50:00
+                  span.history__status-ico
+               .history__row
+                  .history__row-date
+                     p.history__date.has-ico 16.02.2015  08:50
+                  .history__row-status
+                     p.history__status=statusText
+                  .history__row-location
+                     p.history__location Днепропетровск
+
+      +historyItem('is-done', 'Выполнен')
+      +historyItem('is-done', 'Выполнен')
+
+
+      .history__item.is-done
+         header.history__head
+            .history__intro.is-active
+               button.history__toggler.is-opened
+               a(href="#").history__number Заказ №03646721
+               p.history__sum На сумму 18 546 грн
+               p.history__date 16.02.2015  00:50:00
+               span.history__status-ico.is-done
+            .history__row
+               .history__row-date
+                  p.history__date.has-ico 16.02.2015  08:50
+               .history__row-status
+                  p.history__status Выполнен
+               .history__row-location
+                  p.history__location Днепропетровск
+         .history__item-body.is-visible
+            .history__names
+               p.history__title.history__title_name Наименование
+               p.history__title.history__title_ammount Количество
+               p.history__title.history__title_price Стоимость
+
+
+            .checks
+               .check.check_history
+                  .check__item.check__item_history
+                     .check__product.check__product_history
+                        .check__img(role="img")
+                        .check__text-wrap.check__text-wrap_history
+                           a.check__product-name(href="#") Samsung UE40F8000ATXUA
+                           br
+                           a.check__reply.solid-link(href="#") Оставить отзыв
+                     .check__amount-wrap.check__amount-wrap_history
+                        span.check__amounty 1 шт.
+                     .check__price-wrap
+                        span.check__price.check__price_history 5000
+                        span.check__currency грн
+
+
+                  .check__item.check__item_last.check__item_history
+                     .check__product.check__product_history
+                        .check__img(role="img")
+                        .check__text-wrap.check__text-wrap_history
+                           a.check__product-name(href="#") Фотоаппарат Nikon D3200 18-55VR Kit
+                           br
+                           a.check__reply.solid-link(href="#") Оставить отзыв
+                     .check__amount-wrap.check__amount-wrap_history
+                        span.check__amounty 1 шт.
+                     .check__price-wrap
+                        span.check__price.check__price_history 10 000
+                        span.check__currency грн
+
+                  .check__sum-wrap
+                     .check__source
+                        span Магазин #[a.solid-link.check__source-link(href='#') Rozetka]
+                     p.check__sum-text Сумма чека:
+                     p.check__sum 15 000 грн
+                  footer.check__cashback-wrap.check__cashback-wrap_history
+                     .check__cashback-text-wrap
+                        a.simple-link.check__cashback-link(href="#") Возвращаем на счет
+                        +hint
+                     .check__price-wrap.check__price-wrap_history
+                        span.check__cashback-total 20 #[span.check__cashback-currency грн]
+
+
+               .check.check_history
+                  .check__item.check__item_history
+                     .check__product.check__product_history
+                        .check__img(role="img")
+                        .check__text-wrap.check__text-wrap_history
+                           a.check__product-name(href="#") Samsung UE40F8000ATXUA
+                           br
+                           a.check__reply.solid-link(href="#") Оставить отзыв
+                     .check__amount-wrap.check__amount-wrap_history
+                        span.check__amounty 1 шт.
+                     .check__price-wrap
+                        span.check__price.check__price_history 1000
+                        span.check__currency грн
+
+               .check__sum-wrap
+                  .check__source
+                     span Магазин #[a.solid-link.check__source-link(href='#') Fotos]
+                  p.check__sum-text Сумма чека:
+                  p.check__sum 15 000 грн
+               footer.check__cashback-wrap.check__cashback-wrap_history
+                  .check__cashback-text-wrap
+                     a.simple-link.check__cashback-link(href="#") Возвращаем на счет
+                     +hint
+                  .check__price-wrap.check__price-wrap_history
+                     span.check__cashback-total 20 #[span.check__cashback-currency грн]
+
+            footer.checks__footer
+               .checks__total-wrap.checks__total-wrap_history
+                  span.checks__total-text.checks__total-text_history Итого:
+                  span.checks__total-price.checks__total-price_history 16 000 грн
+
+               .checks__cashback-wrap.checks__cashback-wrap_history
+                  .checks__cashback-text-wrap
+                     a.simple-link.checks__cashback-link(href="#") Сума возврата на счет
+                     +hint
+                  .check__price-wrap.check__price-wrap_history
+                     span.check__cashback-total 1 560 #[span.check__cashback-currency грн]
+
+
+
+      +historyItem('is-waiting', 'Ваш заказ загружен на доставку, ожидайте звонок курьера в согласованное время	')
+      +historyItem('is-cancelled', 'Вы отказались от заказа через отправителя')
+      +historyItem('is-waiting', 'Ваш заказ принят на склад службы доставки «Постман»')
+      +historyItem('is-done', 'Выполнен')
+      +historyItem('is-cancelled', 'Отменен')
+
+//end history

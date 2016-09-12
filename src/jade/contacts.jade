@@ -1,0 +1,80 @@
+extends _layout
+block title
+   title contacts
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.contacts
+      +card
+      .contacts__inner
+         ul.breadcrumbs
+            li: a(href="") Главная
+         h4.title Контактная информация
+         .contacts__content
+            .contacts__heading
+               .contacts__welcome-img(role="img")
+               .contacts__col.contacts__col_tel
+                  h6.heading Телефоны
+                  p.tel-number.tel-number_city (044) 323 31 90
+                  p.tel-number.tel-number_city (044) 233 76 90
+                  p.tel-number.tel-number_life (067) 232 61 35
+                  p.tel-number.tel-number_kyivstar (067) 232 61 35
+                  span.contacts__col-or или
+                  a.mail-to(href="mailto: zakaz@skidka.ua") zakaz@skidka.ua
+               .contacts__col.contacts__col_schedule
+                  .contacts__col-item
+                     h6.heading.heading_padding.call-center-ico Call-центр:
+                     p.contacts__col-text Понедельник - воскресенье
+                     p.contacts__col-text с 9:00 до 21:00
+                  .contacts__col-item
+                     h6.heading.heading_padding.service-ico Сервисный отдел
+                     p.contacts__col-text Понедельник - пятница
+                     p.contacts__col-text с 9:00 до 18:00
+               .contacts__col.contacts__col_give
+                  .contacts__col-item
+                     h6.heading.heading_padding.give-ico График выдачи товаров
+                     p.contacts__col-span (самовывоз из офиса):
+                     .contacts__schedule-item
+                        p.contacts__schedule-text: strong Пн - Пт:
+                        P.contacts__schedule-text с 9:00 до 19:00
+                     .contacts__schedule-item
+                        p.contacts__schedule-text: strong Сб:
+                        P.contacts__schedule-text с 10:00 до 15:00
+                     .contacts__schedule-item
+                        p.contacts__schedule-text: strong Вс:
+                        P.contacts__schedule-text выходной
+            .contacts__map-wrap
+               h6.heading.attention-ico Обратите внимание!
+               p Вы можете проверить ТОВАР, оформить ГАРАНТИЮ и товарный ЧЕК при получении товара по Вашему адресу,в Киевском офисе или в своём городе.
+               h6.heading.office-ico Офис SKIDKA
+                  span ®
+               p Киев, ул. Машиностроительная, 8, <br> находится на удобной транспортной развязке. Недалеко от:
+               ul.circle-list
+                  li станции метро "Шулявская",
+                  li Индустриального моста.
+
+
+               .map-wrap
+                  .contacts__map-links
+                     a.link.loupe-ico(href="#") Схематическая карта
+                     br
+                     a.link.loupe-ico(href="#") Региональная карта
+                  #map
+            .contacts__aside-box
+               include _form
+               h6.heading.contacts__aside-title Дилерский сайт
+               p.contacts__aside-text
+                  a.contacts__aside-link(href="#") http://opt.ipcgroup.com.ua &nbsp;
+                  | для просмотра цен необходима регистрация.
+               p.contacts__aside-text По вопросам развития оптовых продаж бращайтесь: &nbsp;
+                  a.contacts__aside-link(href="mailto:partner@ipcgroup.com.ua") partner@ipcgroup.com.ua
+
+   include _footer
+   script(async src="http://maps.googleapis.com/maps/api/js")
+

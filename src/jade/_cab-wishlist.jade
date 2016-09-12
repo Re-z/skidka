@@ -1,0 +1,19 @@
+.wishlist
+   .wishlist__intro
+      .wishlist__clear-wrap
+         a.solid-link.wishlist__clear(href="#") Очистить весь список
+         span.wishlist-ico
+      +share('wishlist__share')
+   .wishlist__items-wrap
+      +item('item_wishlist')
+      +item('item_wishlist')
+      +item('item_wishlist')
+      +item('item_wishlist')
+      +item('item_wishlist')
+   .wishlist__total
+      span.wishlist__total-text Итого:
+      span.wishlist__total-sum 16 000
+      span.wishlist__total-cur грн
+   .wishlist__buy-wrap
+      a.btn.wishlist__buy(href="#") Купить все доступные товары
+

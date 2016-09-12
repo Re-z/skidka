@@ -1,0 +1,60 @@
+//start menu
+section.menu
+    .menu__inner-wrap
+        .menu__inner
+          ul.menu__list
+              - var mainMenu = ['Все товары', 'Мобильные', 'Бытовая техника', 'Аудио-видео техника', 'Магазины с CashBack', 'Пригласи друга', 'Акции']
+              each item in mainMenu
+                  if(item === "Бытовая техника")
+                      li.menu__item
+                          span.menu__trigger.menu__trigger_technic=item
+                  else if (item === 'Акции')
+                      li.menu__item
+                          span.menu__trigger.is-active=item
+                  else
+                      li.menu__item
+                          span.menu__trigger=item
+
+
+          //start dropdown
+          .dropdown
+              .dropdown__col
+                  .dropdown__category
+                      h5.dropdown__title Крупная бытовая техника
+                      ul.dropdown__list
+                          - var category1 = ['Холодильники', 'Морозильные камеры', 'Стиральные машины', 'Сушильные автоматы', 'Плиты', 'Посудомоечные машины', 'Профессиональная техника', 'Аксессуары к кбт']
+                              each item in category1
+                                  li: a(href="#" title=item)=item
+                  .dropdown__category
+                      h5.dropdown__title Встраиваемая техника
+                      ul.dropdown__list
+                          - var category2 = ['Духовые шкафы', 'Варочные поверхности', 'Готовые комплекты', 'Вытяжки', 'Измельчители пищевых отходов', 'Холодильники', 'Стиральные машины', 'Посудомоечные машины' , 'Морозильники' , 'Микроволновые печи' , 'Аксессуары к вбт']
+                          each item in category2
+                              li: a(href="#" title=item)=item
+
+              .dropdown__col
+                  .dropdown__category
+                      h5.dropdown__title Крупная бытовая техника
+                      ul.dropdown__list
+                          - var category3 = ['Аппараты для газирования', 'Аэрогрили', 'Блендеры', 'Бутербродницы', 'Вафельницы', 'Весы кухонные', 'Грили', 'Йогуртницы и мороженицы', 'Кофеварки', 'Кофемолки', 'Кулеры для воды', 'Кухонные комбайны', 'Ломтерезки', 'Маринаторы', 'Микроволновые печи', 'Миксеры', 'Мультиварки', 'Мясорубки', 'Настольные плиты', 'Пароварки' ]
+                          each item in category3
+                              li: a(href="#" title=item)=item
+
+              .dropdown__col
+                  .dropdown__category
+                      h5.dropdown__title Крупная бытовая техника
+                      ul.dropdown__list
+                          - var category3 = ['Холодильники', 'Морозильные камеры', 'Стиральные машины', 'Сушильные автоматы', 'Плиты', 'Посудомоечные машины', 'Профессиональная техника', 'Аксессуары к кбт']
+                          each item in category3
+                              li: a(href="#" title=item)=item
+
+                  .dropdown__category
+                      h5.dropdown__title Встраиваемая техника
+                      ul.dropdown__list
+                          - var category4 = ['Духовые шкафы', 'Варочные поверхности', 'Готовые комплекты', 'Вытяжки', 'Измельчители пищевых отходов', 'Холодильники', 'Стиральные машины', 'Посудомоечные машины' , 'Морозильники' , 'Микроволновые печи' , 'Аксессуары к вбт']
+                          each item in category4
+                              li: a(href="#" title=item)=item
+              .dropdown__col
+                  a.dropdown__banner(href="#" title="" style="background-image: url(https://placebear.com/240/450)")
+      //end dropdown
+ //end menu

@@ -1,0 +1,232 @@
+
+
+
+
+
+
+mixin hint-block(someText)
+	section.hint-block
+	.hint-block__inner-wrap
+		.hint-block__inner
+			a.hint-block__text(href="#" title="test")=someText
+
+mixin inputError
+	p.input-error-text Поле необходимо заполнить
+
+mixin card
+	.card
+		a(href="#").card__img
+		button.card__close
+
+mixin socials(className)
+	- var socials = ["vk", "goo", "fb"]
+	ul.socials(class=className)
+		each item in socials
+			li
+				a(class="socials__#{item}" href="#", title="#{item}")
+
+
+mixin item(className)
+	.item(class=className)
+		button.close.item__close
+		.item__inner
+
+			.item__remove
+				a.solid-link(href="#") Удалить
+				span.wishlist-ico
+
+			button.wishlist-add.has-hint(data-title="добавить товар в список желаний")
+
+			.item__img-wrap.has-hint(data-title="Nikon D3200 18-55VR Kit")
+				img.item__img(src="img/item-img1.jpg")
+			span.item__title-wrap
+				a.item__title(href="#") Фотоаппарат Nikon D3200 18-55VR Kit
+			.item__row.item__row_rating
+				.item__stars-wrap
+					.rating-item
+					.rating-item
+					.rating-item
+					.rating-item
+					.rating-item
+				a.item__replies(href="#" title="") 36 отзывов
+			.item__row.item__row_m0
+				p.item__price 19 787 #[span грн]
+				button.item__buy.btn Купить
+			.item__row
+				p.item__code код 789789
+				p.item__avaliability есть в наличии
+			footer.item__footer
+				a.item__prices-link(href="#" title="") Цены:
+				p.item__prices 1 099 - 25 789 грн
+
+
+mixin itemShort(className)
+	.item-short(class=className)
+		.item-short__inner
+			.item-short__img-wrap.has-hint(data-title="Nikon D3200 18-55VR Kit")
+				img.item-short__img(src="img/item-short1.jpg")
+
+			span.item-short__title-wrap
+				a.item-short__title(href="#") Dune HD Base 3D
+			.item-short__row
+				p.item-short__price 19 787 #[span грн]
+				button.item-short__buy.btn Купить
+			.item-short__row
+				p.item-short__code код 789789
+				p.item-short__avaliability есть в наличии
+
+
+
+
+
+
+
+
+
+
+mixin sortBtn(className, text1, text2)
+	.sort-btn-wrap(class=className)
+		button.sort-btn=text1
+		button.sort-btn.is-active=text2
+
+
+mixin hint(className)
+	.hint(class=className)
+		.hint__box
+			h6 #[i] LED-подсветка
+			p Технология, которая используется для создания трехмерного изображения в телевизоре.
+			p Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.
+			p <strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.
+
+mixin share(className)
+	ul.share(class=className)
+		li Рекомендуй друзьям:
+		- var shareItems = ['vk', 'od', 'fb', 'tw', 'goo', 'mail', 'email', 'print', 'more']
+		each item in shareItems
+			li
+				a(href="#" class='share__#{item}')
+
+
+mixin article(title)
+	article.article
+		img(src="http://placecage.com/303/182")
+		div
+			h4=title
+			p Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.
+		footer
+			+share('article__share')
+			a.link.article__footer-link(href="#") Почитать
+
+mixin pagination(className)
+	.pagination(class=className)
+		a(href="#").prev-medium.pagination__prev
+		a(href="#").next-medium.pagination__next
+		ul.pagination__list
+			- var paginationItems = ['1', '2', '3', '4', '5', '6', '7', '...', '56']
+			each item in paginationItems
+				if item === '2'
+					li: a(class="is-active" href="#")=item
+				else
+					li: a(href="#")=item
+
+
+
+
+mixin aside-nav(className)
+	//start aside-nav
+	aside.aside-nav(class=className)
+		ul.list
+			- var asideNavList = ['3D LED телевизоры', '3D Плазменные телевизоры', 'LCD телевизоры', 'LED телевизоры', 'Плазменные телевизоры', '3D Blu-ray плееры', 'DVD и Blu-ray', 'AV ресиверы', 'Цифровые ресиверы', 'Медиаплееры', '3D Домашние кинотеатры', 'Домашние кинотеатры', 'Музыкальные центры', 'Проекторы', 'Аксессуары для ТВ', 'Док-станции', 'Наушники', 'Радиочасы']
+			each item in asideNavList
+				li: a(href="#")=item
+	//end aside-nav
+
+
+mixin slider(className)
+	.slider(class=className)
+		button.prev.slider__prev
+		button.next.slider__next
+		.slider__content
+			a.slider__item(href="#" title="" style="background-image: url(img/slider-item.png)")
+			a.slider__item(href="#" title="" style="background-image: url(https://placebear.com/960/200)")
+			a.slider__item(href="#" title="" style="background-image: url(https://placebear.com/960/265)")
+			a.slider__item(href="#" title="" style="background-image: url(https://placebear.com/960/265)")
+
+mixin catItem(linkName)
+	.cat-item
+		img.cat-item__img(src="img/cat-item1.jpg")
+		a(href="#").cat-item__link=linkName
+		ul.list.list_cat-item
+			li: a(href="#") LG
+			li: a(href="#") PANASONIC
+			li: a(href="#") Philips
+			li: a(href="#") Samsung
+			li: a(href="#") Sharp
+			li: a(href="#") Sony
+
+
+
+
+mixin sourceInfoRow(key, value)
+	.source-info__row
+		.source-info__key=key
+		.source-info__value=value
+
+
+
+mixin box(className)
+	.box(class=className)
+		header.box__header
+			.box__price-wrap
+				span.box__price 19 787
+				span.box__curr грн
+				p.box__descr-text Цена
+
+			.box__cashback-wrap
+				span.box__cashback 629
+				span.box__curr грн
+				span.box__descr-text.box__cashback-text Возвращаем
+				+hint
+		.box__content
+			a.btn.box__buy-btn(href="#") Купить
+			p.box__avaliability есть в наличии
+			.box__row
+				button.link.box__one-click Купить в 1 клик
+				a.action-btn.box__credit-btn(href="#") Кредит 2350 грн./мес
+				.one-click
+					button.close.one-click__close
+					.one-click__first-step
+						h6.heading Быстрый заказ
+						p.one-click__text Пожалуйста, оставьте свой телефон.
+						p.one-click__text Наши сотрудники свяжутся с вами в ближайшее время.
+						form.one-click__form
+							p Ваш телефон: #[span.required *]
+							.input-wrap
+								+inputError
+								span +38
+								input(type="tel" required="" placeholder="(___) ___- __-__" class="one-click__tel input-text")
+							input.one-click__submit.btn(type="submit" value="Заказать")
+					.one-click__sec-step
+						.one-click__accepted(role="img")
+						h6.heading.one-click__heading-accepted Заказ принят
+			.box__row
+				.box__source-wrap
+					span.main__descr-text Магазин: #[button.solid-link.box__source-link Rozetka]
+					.source-info
+						button.close.source-info__close
+						h6.heading Информация о магазине
+						.source-info__table
+							+sourceInfoRow('Город', 'Киев')
+							.source-info__row
+								.source-info__key Сайт
+								.source-info__value: a.blue-link(href="#") Rozetka.com.ua
+							+sourceInfoRow('Режим работы', 'Пн-Пт: с 9:00 до 18:00, Суббота: с 9:00 до 15:00')
+							.source-info__row
+								.source-info__key Телефоны
+								.source-info__value (044) XXX-XX-XX #[a.blue-link(href="#") Показать]
+							+sourceInfoRow('Skype', 'likegsm')
+							+sourceInfoRow('Год основания', '2012')
+							+sourceInfoRow('Информация о компании', 'Интернет-магазин мобильных телефонов и планшетов. «LikeGSM» знает о мобильных телефонах и гаджетах все!')
+				.box__prices-wrap
+					span.box__descr-text  #[a.solid-link.box__descr-text(href="#")Цены: ] 1099 - 25 789 грн
+

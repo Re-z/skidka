@@ -1,0 +1,61 @@
+extends _layout
+block title
+   title result of search
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.result
+      +card
+      .result__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+            li: a(href="#") Результаты поиска
+         h4.title.result__title По запросу «
+            a.title__link(href="#") Телевизоры
+            | » найдено 200 позиций
+         .result__content
+            +aside-nav('result__aside-nav')
+
+
+            .result__box
+               .options-bar
+                  .options-bar__sort-wrap
+                     p.options-bar__text Выводить
+                        a.options-bar__link(href="#")
+                           span.link по популярности
+                           i.options-bar__arr-down
+                  .options-bar__view-wrap
+                     span.options-bar__text Вид:
+                     span.sort-btns-wrap
+                        button.sort-row.is-active
+                        button.sort-list
+
+               .result__items-wrap
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+
+               +pagination
+
+         include _recently
+
+   include _footer

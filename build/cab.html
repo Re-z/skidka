@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>cab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css"><link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--start header-->
+    <header class="header">
+      <div class="header__inner">
+        <button class="schedule-btn">Режим работы</button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" title="Доставка">Доставка</a></li>
+            <li><a href="#" title="Оплата">Оплата</a></li>
+            <li><a href="#" title="Гарантия и сервис ">Гарантия и сервис </a></li>
+            <li><a href="#" title="Контакты">Контакты</a></li>
+          </ul>
+        </nav><a href="#" class="cabinet-btn">Личный кабинет</a>
+        <div class="schedule">
+          <div class="schedule__item">
+            <h6 class="subtitle call-center-ico">Call-центр:</h6>
+            <p class="schedule__text">Понедельник - воскресенье</p>
+            <p class="schedule__text">с 9:00 до 21:00</p>
+          </div>
+          <div class="schedule__item">
+            <h6 class="subtitle service-ico">Сервисный отдел:</h6>
+            <p class="schedule__text">Понедельник - пятница</p>
+            <p class="schedule__text">с 9:00 до 18:00</p>
+          </div>
+          <div class="schedule__close close"></div>
+        </div>
+      </div>
+      <!--end header-->
+    </header>
+    <!--start intro-->
+    <section class="intro">
+      <div class="intro__inner"><a href="index.html" title="" class="logo"></a>
+        <div class="tel">
+          <p class="tel__main">(044) 495-71-90
+            <button class="tel__arrow"></button>
+          </p>
+          <button class="tel__callback link">Перезвоните мне</button>
+          <div class="tel__popup">
+            <p class="tel-number tel-number_city">(044) 233 76 90</p>
+            <p class="tel-number tel-number_life">(044) 233 76 90</p>
+            <p class="tel-number tel-number_kyivstar">(044) 233 76 90</p>
+          </div>
+          <div class="callback">
+            <h6 class="callback__title subtitle">Заказ обратного звонка</h6>
+            <p class="callback__text">Оставьте номер вашего телефона и наш оператор перезвонит вам в течении часа.</p>
+            <form class="callback__form"></form>
+            <p>Ваше имя:</p>
+            <div class="input-wrap is-error callback__name-wrap">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+              <input type="text" class="callback__name input-text">
+            </div>
+            <p>Ваш телефон: <span class="required">*</span></p>
+            <div class="input-wrap is-error">
+              <p class="input-error-text">Поле необходимо заполнить</p><span>+38</span>
+              <input pattern="^[ 0-9]+$" type="tel" required placeholder="(___) ___- __-__" class="callback__tel input-text">
+            </div>
+            <input type="submit" value="Жду звонка" class="callback__submit btn">
+            <div class="callback__close close"></div>
+          </div>
+        </div>
+        <form class="search">
+          <div class="input-wrap search__query-wrap">
+            <p class="input-error-text">Поле необходимо заполнить</p>
+            <input type="text" placeholder="Поиск товаров" class="search__query input-text">
+          </div>
+          <input type="submit" value="Найти" class="search__submit btn">
+        </form>
+        <div class="in-cart">
+          <p class="in-cart__title">В корзине</p>
+          <p class="in-cart__text">1 товар - 18 799 грн</p>
+          <p class="in-cart__text is-empty">на сумму 0 грн</p><a href="#" title="Оформить заказ" class="link">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+    <!--end intro-->
+    <!--start menu-->
+    <section class="menu">
+      <div class="menu__inner-wrap">
+        <div class="menu__inner">
+          <ul class="menu__list">
+            <li class="menu__item"><span class="menu__trigger">Все товары</span></li>
+            <li class="menu__item"><span class="menu__trigger">Мобильные</span></li>
+            <li class="menu__item"><span class="menu__trigger menu__trigger_technic">Бытовая техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Аудио-видео техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Магазины с CashBack</span></li>
+            <li class="menu__item"><span class="menu__trigger">Пригласи друга</span></li>
+            <li class="menu__item"><span class="menu__trigger is-active">Акции</span></li>
+          </ul>
+          <!--start dropdown-->
+          <div class="dropdown">
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Аппараты для газирования">Аппараты для газирования</a></li>
+                  <li><a href="#" title="Аэрогрили">Аэрогрили</a></li>
+                  <li><a href="#" title="Блендеры">Блендеры</a></li>
+                  <li><a href="#" title="Бутербродницы">Бутербродницы</a></li>
+                  <li><a href="#" title="Вафельницы">Вафельницы</a></li>
+                  <li><a href="#" title="Весы кухонные">Весы кухонные</a></li>
+                  <li><a href="#" title="Грили">Грили</a></li>
+                  <li><a href="#" title="Йогуртницы и мороженицы">Йогуртницы и мороженицы</a></li>
+                  <li><a href="#" title="Кофеварки">Кофеварки</a></li>
+                  <li><a href="#" title="Кофемолки">Кофемолки</a></li>
+                  <li><a href="#" title="Кулеры для воды">Кулеры для воды</a></li>
+                  <li><a href="#" title="Кухонные комбайны">Кухонные комбайны</a></li>
+                  <li><a href="#" title="Ломтерезки">Ломтерезки</a></li>
+                  <li><a href="#" title="Маринаторы">Маринаторы</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Миксеры">Миксеры</a></li>
+                  <li><a href="#" title="Мультиварки">Мультиварки</a></li>
+                  <li><a href="#" title="Мясорубки">Мясорубки</a></li>
+                  <li><a href="#" title="Настольные плиты">Настольные плиты</a></li>
+                  <li><a href="#" title="Пароварки">Пароварки</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col"><a href="#" title="" style="background-image: url(https://placebear.com/240/450)" class="dropdown__banner"></a></div>
+          </div>
+        </div>
+      </div>
+      <!--end dropdown-->
+    </section>
+    <!--end menu-->
+        <section class="hint-block"></section>
+        <div class="hint-block__inner-wrap">
+          <div class="hint-block__inner"><a href="#" title="test" class="hint-block__text">Получить скидочную карту</a></div>
+        </div>
+    <section class="cab">
+          <div class="card"><a href="#" class="card__img"></a>
+            <button class="card__close"></button>
+          </div>
+      <div class="cab__inner">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+        </ul>
+        <h4 class="title">Мой кабинет</h4>
+        <div class="cab__heading">
+          <div class="cashback-status">
+            <h6 class="heading cashback-status__title">Состояние CashBack счета</h6>
+            <p class="cashback-status__sum">1 874 <span>грн</span></p><a href="#" class="btn cashback-status__details">Детально</a>
+          </div>
+        </div>
+        <div class="cab__content">
+          <div class="cab__tabs-wrap">
+            <div class="cab__tabs tabs">
+              <button class="tabs__tab personal-trig is-active">Личные данные</button>
+              <button class="tabs__tab cashback-trig">Кэшбэк</button>
+              <button class="tabs__tab history-trig">История покупок</button>
+              <button class="tabs__tab wishlist-trig">Список желаний</button>
+              <button class="tabs__tab bank-trig">Моя банковская карта</button><a href="#" class="action-btn cab__logout">Выйти из кабинета</a>
+            </div>
+          </div>
+          <div class="personal__blocks-holder">
+            <!--start personal-->
+            <div class="personal">
+              <div class="personal__data">
+                <div role="img" class="personal__img"></div>
+                <div class="personal__form form">
+                  <h6 class="heading personal__heading">Редактировать личные данные</h6>
+                  <form class="form__main">
+                    <p>Электронная почта
+                      <div class="input-wrap form__email-wrap is-disabled">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="email" disabled value="alex@skidka.ua" class="input-text form__email">
+                      </div>
+                    </p>
+                    <p>Имя
+                      <div class="input-wrap form__name-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" value="Александр" placeholder="Имя" class="input-text form__name">
+                      </div>
+                      <div class="input-wrap form__surname-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" value="Атаманенко" placeholder="Фамилия" class="input-text form__surname">
+                      </div>
+                    </p>
+                    <p>Телефон
+                      <div class="input-wrap form__tel-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="tel" placeholder="(___) - ___ - __ - __" class="input-text form__tel">
+                      </div>
+                    </p>
+                    <p>Смена пароля
+                      <div class="input-wrap form__pass-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" placeholder="Старый пароль" class="input-text form__pass">
+                      </div>
+                      <div class="input-wrap form__pass-repeat-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" placeholder="Новый пароль" class="input-text form__pass-repeat">
+                      </div>
+                      <div class="input-wrap form__pass-repeat-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" placeholder="Повторите новый пароль" class="input-text form__pass-repeat">
+                      </div>
+                    </p>
+                    <input type="submit" value="Сохранить изменения" class="btn form__submit personal__btn">
+                  </form>
+                </div>
+              </div>
+              <div class="personal__address">
+                <h6 class="heading personal__heading">Адреса доставки:<a href="#" class="link personal__add-address">Добавить новый адрес</a></h6>
+                <div class="personal__address-item edit-item">
+                  <p class="personal__address-text edit-item__text">'Киев, Днепровская набережная 15, кв 335'</p>
+                  <div class="edit-item__edit-block"><a href="#" class="solid-link edit-item__edit">Рекдактировать</a><a href="#" class="solid-link edit-item__main is-active">Основной</a><a href="#" class="solid-link edit-item__del">Удалить</a></div>
+                </div>
+                <div class="personal__address-item edit-item">
+                  <p class="personal__address-text edit-item__text">Киев, Вышгородская 31, кв 15</p>
+                  <div class="edit-item__edit-block"><a href="#" class="solid-link edit-item__edit">Рекдактировать</a><a href="#" class="solid-link edit-item__main">Сделать основным</a><a href="#" class="solid-link edit-item__del">Удалить</a></div>
+                </div>
+              </div>
+            </div>
+            <!--end personal-->
+            <!--start cashback-->
+            <div class="cashback">
+              <div class="cashback__header">
+                <div class="cashback__block cashback__block_left">
+                  <div role="img" class="cashback__block-img cashback__block-img_status"></div>
+                  <h6 class="heading cashback__heading">Состояние CashBack счета
+                        <div class="hint cashback__hint">
+                          <div class="hint__box">
+                            <h6><i></i> LED-подсветка</h6>
+                            <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                            <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                            <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                          </div>
+                        </div>
+                  </h6><span class="ammount cashback__block-ammount">1 874 <span class="ammount__cur">грн</span></span>
+                </div>
+                <div class="cashback__block cashback__block_right">
+                  <div role="img" class="cashback__block-img cashback__block-img_friends"></div>
+                  <h6 class="heading cashback__heading">Доступный бонус от покупок друзей
+                        <div class="hint cashback__hint">
+                          <div class="hint__box">
+                            <h6><i></i> LED-подсветка</h6>
+                            <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                            <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                            <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                          </div>
+                        </div>
+                  </h6><span class="ammount cashback__block-ammount">50 <span class="ammount__cur">грн</span></span>
+                </div>
+              </div>
+              <div class="cashback__widthdraw">
+                <h6 class="heading cashback__heading">Доступно для вывода на карту:<span class="ammount cashback__widthdraw-ammount">1 924 <span class="ammount__cur">грн</span></span></h6><a href="" class="btn cashback__widthdraw-btn">Вывести на карту</a>
+                    <div class="hint cashback__widthdraw-hint">
+                      <div class="hint__box">
+                        <h6><i></i> LED-подсветка</h6>
+                        <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                        <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                        <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                      </div>
+                    </div>
+              </div>
+              <footer class="cashback__hint-box">
+                <p class="cashback__hint-box-text">Если вы сделали покупку, но она не появилась в списке “История покупок и кэшбэк”, не волнуйтесь, она должна появиться в течении 20 дней. Вы получите письмо на e-mail после зачисления кэшбэк. Если прошло более 20 дней, пожалуйста свяжитесь с нами<a href="#" class="cashback__hint-box-link"> через специальную форму</a>,указав информацию о покупке. Мы решим этот вопрос максимально быстро.</p>
+              </footer>
+            </div>
+            <!--end cashback-->
+            <!--start history-->
+            <div class="history">
+              <div class="history__inner">
+                                <div class="history__item is-done">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Выполнен</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                                <div class="history__item is-done">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Выполнен</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                <div class="history__item is-done">
+                  <header class="history__head">
+                    <div class="history__intro is-active">
+                      <button class="history__toggler is-opened"></button><a href="#" class="history__number">Заказ №03646721</a>
+                      <p class="history__sum">На сумму 18 546 грн</p>
+                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico is-done"></span>
+                    </div>
+                    <div class="history__row">
+                      <div class="history__row-date">
+                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                      </div>
+                      <div class="history__row-status">
+                        <p class="history__status">Выполнен</p>
+                      </div>
+                      <div class="history__row-location">
+                        <p class="history__location">Днепропетровск</p>
+                      </div>
+                    </div>
+                  </header>
+                  <div class="history__item-body is-visible">
+                    <div class="history__names">
+                      <p class="history__title history__title_name">Наименование</p>
+                      <p class="history__title history__title_ammount">Количество</p>
+                      <p class="history__title history__title_price">Стоимость</p>
+                    </div>
+                    <div class="checks">
+                      <div class="check check_history">
+                        <div class="check__item check__item_history">
+                          <div class="check__product check__product_history">
+                            <div role="img" class="check__img"></div>
+                            <div class="check__text-wrap check__text-wrap_history"><a href="#" class="check__product-name">Samsung UE40F8000ATXUA</a><br><a href="#" class="check__reply solid-link">Оставить отзыв</a></div>
+                          </div>
+                          <div class="check__amount-wrap check__amount-wrap_history"><span class="check__amounty">1 шт.</span></div>
+                          <div class="check__price-wrap"><span class="check__price check__price_history">5000</span><span class="check__currency">грн</span></div>
+                        </div>
+                        <div class="check__item check__item_last check__item_history">
+                          <div class="check__product check__product_history">
+                            <div role="img" class="check__img"></div>
+                            <div class="check__text-wrap check__text-wrap_history"><a href="#" class="check__product-name">Фотоаппарат Nikon D3200 18-55VR Kit</a><br><a href="#" class="check__reply solid-link">Оставить отзыв</a></div>
+                          </div>
+                          <div class="check__amount-wrap check__amount-wrap_history"><span class="check__amounty">1 шт.</span></div>
+                          <div class="check__price-wrap"><span class="check__price check__price_history">10 000</span><span class="check__currency">грн</span></div>
+                        </div>
+                        <div class="check__sum-wrap">
+                          <div class="check__source"><span>Магазин <a href="#" class="solid-link check__source-link">Rozetka</a></span></div>
+                          <p class="check__sum-text">Сумма чека:</p>
+                          <p class="check__sum">15 000 грн</p>
+                        </div>
+                        <footer class="check__cashback-wrap check__cashback-wrap_history">
+                          <div class="check__cashback-text-wrap"><a href="#" class="simple-link check__cashback-link">Возвращаем на счет</a>
+                                <div class="hint">
+                                  <div class="hint__box">
+                                    <h6><i></i> LED-подсветка</h6>
+                                    <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                                    <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                                    <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                                  </div>
+                                </div>
+                          </div>
+                          <div class="check__price-wrap check__price-wrap_history"><span class="check__cashback-total">20 <span class="check__cashback-currency">грн</span></span></div>
+                        </footer>
+                      </div>
+                      <div class="check check_history">
+                        <div class="check__item check__item_history">
+                          <div class="check__product check__product_history">
+                            <div role="img" class="check__img"></div>
+                            <div class="check__text-wrap check__text-wrap_history"><a href="#" class="check__product-name">Samsung UE40F8000ATXUA</a><br><a href="#" class="check__reply solid-link">Оставить отзыв</a></div>
+                          </div>
+                          <div class="check__amount-wrap check__amount-wrap_history"><span class="check__amounty">1 шт.</span></div>
+                          <div class="check__price-wrap"><span class="check__price check__price_history">1000</span><span class="check__currency">грн</span></div>
+                        </div>
+                      </div>
+                      <div class="check__sum-wrap">
+                        <div class="check__source"><span>Магазин <a href="#" class="solid-link check__source-link">Fotos</a></span></div>
+                        <p class="check__sum-text">Сумма чека:</p>
+                        <p class="check__sum">15 000 грн</p>
+                      </div>
+                      <footer class="check__cashback-wrap check__cashback-wrap_history">
+                        <div class="check__cashback-text-wrap"><a href="#" class="simple-link check__cashback-link">Возвращаем на счет</a>
+                              <div class="hint">
+                                <div class="hint__box">
+                                  <h6><i></i> LED-подсветка</h6>
+                                  <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                                  <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                                  <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="check__price-wrap check__price-wrap_history"><span class="check__cashback-total">20 <span class="check__cashback-currency">грн</span></span></div>
+                      </footer>
+                    </div>
+                    <footer class="checks__footer">
+                      <div class="checks__total-wrap checks__total-wrap_history"><span class="checks__total-text checks__total-text_history">Итого:</span><span class="checks__total-price checks__total-price_history">16 000 грн</span></div>
+                      <div class="checks__cashback-wrap checks__cashback-wrap_history">
+                        <div class="checks__cashback-text-wrap"><a href="#" class="simple-link checks__cashback-link">Сума возврата на счет</a>
+                              <div class="hint">
+                                <div class="hint__box">
+                                  <h6><i></i> LED-подсветка</h6>
+                                  <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                                  <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                                  <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="check__price-wrap check__price-wrap_history"><span class="check__cashback-total">1 560 <span class="check__cashback-currency">грн</span></span></div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+                                <div class="history__item is-waiting">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Ваш заказ загружен на доставку, ожидайте звонок курьера в согласованное время	</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                                <div class="history__item is-cancelled">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Вы отказались от заказа через отправителя</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                                <div class="history__item is-waiting">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Ваш заказ принят на склад службы доставки «Постман»</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                                <div class="history__item is-done">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Выполнен</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+                                <div class="history__item is-cancelled">
+                                  <header class="history__head">
+                                    <div class="history__intro">
+                                      <button class="history__toggler"></button><a href="#" class="history__number">Заказ №03646721</a>
+                                      <p class="history__sum">На сумму 18 546 грн</p>
+                                      <p class="history__date">16.02.2015  00:50:00</p><span class="history__status-ico"></span>
+                                    </div>
+                                    <div class="history__row">
+                                      <div class="history__row-date">
+                                        <p class="history__date has-ico">16.02.2015  08:50</p>
+                                      </div>
+                                      <div class="history__row-status">
+                                        <p class="history__status">Отменен</p>
+                                      </div>
+                                      <div class="history__row-location">
+                                        <p class="history__location">Днепропетровск</p>
+                                      </div>
+                                    </div>
+                                  </header>
+                                </div>
+              </div>
+            </div>
+            <!--end history-->
+            <div class="wishlist">
+              <div class="wishlist__intro">
+                <div class="wishlist__clear-wrap"><a href="#" class="solid-link wishlist__clear">Очистить весь список</a><span class="wishlist-ico"></span></div>
+                    <ul class="share wishlist__share">
+                      <li>Рекомендуй друзьям:</li>
+                      <li><a href="#" class="share__vk"></a></li>
+                      <li><a href="#" class="share__od"></a></li>
+                      <li><a href="#" class="share__fb"></a></li>
+                      <li><a href="#" class="share__tw"></a></li>
+                      <li><a href="#" class="share__goo"></a></li>
+                      <li><a href="#" class="share__mail"></a></li>
+                      <li><a href="#" class="share__email"></a></li>
+                      <li><a href="#" class="share__print"></a></li>
+                      <li><a href="#" class="share__more"></a></li>
+                    </ul>
+              </div>
+              <div class="wishlist__items-wrap">
+                    <div class="item item_wishlist">
+                      <button class="close item__close"></button>
+                      <div class="item__inner">
+                        <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                        <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                        <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                        <div class="item__row item__row_rating">
+                          <div class="item__stars-wrap">
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                          </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                        </div>
+                        <div class="item__row item__row_m0">
+                          <p class="item__price">19 787 <span>грн</span></p>
+                          <button class="item__buy btn">Купить</button>
+                        </div>
+                        <div class="item__row">
+                          <p class="item__code">код 789789</p>
+                          <p class="item__avaliability">есть в наличии</p>
+                        </div>
+                        <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                          <p class="item__prices">1 099 - 25 789 грн</p>
+                        </footer>
+                      </div>
+                    </div>
+                    <div class="item item_wishlist">
+                      <button class="close item__close"></button>
+                      <div class="item__inner">
+                        <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                        <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                        <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                        <div class="item__row item__row_rating">
+                          <div class="item__stars-wrap">
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                          </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                        </div>
+                        <div class="item__row item__row_m0">
+                          <p class="item__price">19 787 <span>грн</span></p>
+                          <button class="item__buy btn">Купить</button>
+                        </div>
+                        <div class="item__row">
+                          <p class="item__code">код 789789</p>
+                          <p class="item__avaliability">есть в наличии</p>
+                        </div>
+                        <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                          <p class="item__prices">1 099 - 25 789 грн</p>
+                        </footer>
+                      </div>
+                    </div>
+                    <div class="item item_wishlist">
+                      <button class="close item__close"></button>
+                      <div class="item__inner">
+                        <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                        <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                        <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                        <div class="item__row item__row_rating">
+                          <div class="item__stars-wrap">
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                          </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                        </div>
+                        <div class="item__row item__row_m0">
+                          <p class="item__price">19 787 <span>грн</span></p>
+                          <button class="item__buy btn">Купить</button>
+                        </div>
+                        <div class="item__row">
+                          <p class="item__code">код 789789</p>
+                          <p class="item__avaliability">есть в наличии</p>
+                        </div>
+                        <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                          <p class="item__prices">1 099 - 25 789 грн</p>
+                        </footer>
+                      </div>
+                    </div>
+                    <div class="item item_wishlist">
+                      <button class="close item__close"></button>
+                      <div class="item__inner">
+                        <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                        <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                        <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                        <div class="item__row item__row_rating">
+                          <div class="item__stars-wrap">
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                          </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                        </div>
+                        <div class="item__row item__row_m0">
+                          <p class="item__price">19 787 <span>грн</span></p>
+                          <button class="item__buy btn">Купить</button>
+                        </div>
+                        <div class="item__row">
+                          <p class="item__code">код 789789</p>
+                          <p class="item__avaliability">есть в наличии</p>
+                        </div>
+                        <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                          <p class="item__prices">1 099 - 25 789 грн</p>
+                        </footer>
+                      </div>
+                    </div>
+                    <div class="item item_wishlist">
+                      <button class="close item__close"></button>
+                      <div class="item__inner">
+                        <div class="item__remove"><a href="#" class="solid-link">Удалить</a><span class="wishlist-ico"></span></div>
+                        <button data-title="добавить товар в список желаний" class="wishlist-add has-hint"></button>
+                        <div data-title="Nikon D3200 18-55VR Kit" class="item__img-wrap has-hint"><img src="img/item-img1.jpg" class="item__img"></div><span class="item__title-wrap"><a href="#" class="item__title">Фотоаппарат Nikon D3200 18-55VR Kit</a></span>
+                        <div class="item__row item__row_rating">
+                          <div class="item__stars-wrap">
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                            <div class="rating-item"></div>
+                          </div><a href="#" title="" class="item__replies">36 отзывов</a>
+                        </div>
+                        <div class="item__row item__row_m0">
+                          <p class="item__price">19 787 <span>грн</span></p>
+                          <button class="item__buy btn">Купить</button>
+                        </div>
+                        <div class="item__row">
+                          <p class="item__code">код 789789</p>
+                          <p class="item__avaliability">есть в наличии</p>
+                        </div>
+                        <footer class="item__footer"><a href="#" title="" class="item__prices-link">Цены:</a>
+                          <p class="item__prices">1 099 - 25 789 грн</p>
+                        </footer>
+                      </div>
+                    </div>
+              </div>
+              <div class="wishlist__total"><span class="wishlist__total-text">Итого:</span><span class="wishlist__total-sum">16 000</span><span class="wishlist__total-cur">грн</span></div>
+              <div class="wishlist__buy-wrap"><a href="#" class="btn wishlist__buy">Купить все доступные товары</a></div>
+            </div>
+            <!--start-->
+            <div class="bank">
+              <div class="bank__data">
+                <div role="img" class="bank__img"></div>
+                <div class="bank__form">
+                  <h6 class="heading bank__heading">Зарегистрируйте свою карту, чтобы получать на нее выплаты!</h6>
+                  <form class="bank__form form">
+                    <p>Тип карты</p>
+                    <div class="bank__cards-wrap">
+                      <div class="bank__card bank__card_visa">
+                        <input id="visa-card" type="radio" name="reviews__category-list" class="radio">
+                        <label for="visa-card" class="radio-label bank__label"></label>
+                      </div>
+                      <div class="bank__card bank__card_master">
+                        <input id="visa-master" type="radio" name="reviews__category-list" class="radio">
+                        <label for="visa-master" class="radio-label bank__label"></label>
+                      </div>
+                    </div>
+                    <p>Номер карты</p>
+                    <div class="input-wrap form__card-wrap">
+                          <p class="input-error-text">Поле необходимо заполнить</p>
+                      <input type="text" placeholder="" class="input-text form__card">
+                    </div>
+                    <p>Срок действия</p>
+                    <div class="bank__validity-wrap">
+                      <div class="bank__month-wrap"><span class="bank__month js-text">12</span>
+                        <select class="bank__month-select">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option selected>12</option>
+                        </select>
+                      </div><span class="bank__separator">/</span>
+                      <div class="bank__year-wrap"><span class="bank__year js-text">2016</span>
+                        <select class="bank__year-select">
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option selected>2016</option>
+                        </select>
+                      </div>
+                    </div>
+                    <p>CVV:</p>
+                    <div class="bank__cvv-wrap">
+                      <input type="text" placeholder="___" class="input-text form__cvv"><a href="#" class="link bank__form-link">Что это?</a>
+                          <div class="hint bank__form-hint">
+                            <div class="hint__box">
+                              <h6><i></i> LED-подсветка</h6>
+                              <p>Технология, которая используется для создания трехмерного изображения в телевизоре.</p>
+                              <p>Получение объемного изображения сводится к получению двух отдельных картинок для левого и правого глаза. 3D-изображение в телевизоре можно разделить на два типа: затворный и поляризационный.</p>
+                              <p><strong>Затворная технология</strong> использует специальные очки, которые могут поочередно перекрывать изображение то на одном, то на другом глазе. На экране телевизора поочередно показывается картинка для левого и для правого глаза, так что человек получает разные изображения для разных глаз.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <p>Имя, Фамилия владельца
+                      <div class="input-wrap form__name-wrap">
+                            <p class="input-error-text">Поле необходимо заполнить</p>
+                        <input type="text" placeholder="" class="input-text form__name">
+                      </div>
+                    </p>
+                    <input type="submit" value="Сохранить карту" class="btn form__submit form__submit_fl">
+                  </form>
+                </div>
+              </div>
+              <div class="bank__manage">
+                <h6 class="heading bank__heading">Мои карты</h6>
+                <div class="edit-item">
+                  <p class="bank__card-text edit-item__text">5578 7897 5555 5558</p>
+                  <div class="edit-item__edit-block"><a href="#" class="solid-link edit-item__edit">Рекдактировать</a><a href="#" class="solid-link edit-item__main">Сделать основной</a><a href="#" class="solid-link edit-item__del">Удалить</a></div>
+                </div>
+              </div>
+            </div>
+            <!--start-->
+          </div>
+        </div>
+      </div>
+      <!--start footer-->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__col footer__col_shop">
+            <h6 class="subtitle">О магазине</h6>
+            <ul class="footer__list">
+              <li><a href="#">Сертификаты</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Все контакты</a></li>
+              <li><a href="#">Обратная связь</a></li>
+            </ul>
+            <p class="footer__subtext">© 2008–2013 группа компаний IPC</p>
+            <p class="footer__subtext">© Skidka — зарегистрированный <br> товарный знак</p>
+          </div>
+          <div class="footer__col footer__col_buyer">
+            <h6 class="subtitle">Покупателю</h6>
+            <ul class="footer__list">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Гарантия и сервис</a></li>
+              <li><a href="#">Кредит</a></li>
+              <li><a href="#">Дисконтная программа</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Статьи и обзоры</a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col_subscr">
+            <h6 class="subtitle">Узнайте о новостях первым</h6>
+            <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+            <form class="footer__subscription">
+              <div class="footer__email-wrap input-wrap">
+                <input type="email" placeholder="Ваша электронная почта" class="footer__email input-text">
+                <p class="input-error-text">Поле необходимо заполнить</p>
+              </div>
+              <input type="submit" value="Готово" class="footer__subscription-submit btn">
+            </form>
+            <h6 class="subtitle">Мы в социальных сетях</h6>
+            <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+            <!--ul.socials-->
+            <!--    each item in socials-->
+            <!--        li-->
+            <!--            a(class="footer__#{item}" href="#", title="#{item}")-->
+                <ul class="socials">
+                  <li><a href="#" title="vk" class="socials__vk"></a></li>
+                  <li><a href="#" title="goo" class="socials__goo"></a></li>
+                  <li><a href="#" title="fb" class="socials__fb"></a></li>
+                </ul>
+          </div>
+          <div class="footer__col">
+            <h6 class="subtitle">Магазинам</h6>
+            <ul class="footer__list">
+              <li><a href="#" title="О сервисе">О сервисе</a></li>
+              <li><a href="#" title="Платное продвижение">Платное продвижение</a></li>
+              <li><a href="#" title="Продвижение и сервис">Продвижение и сервис</a></li>
+              <li><a href="#" title="Описание XML">Описание XML</a></li>
+              <li><a href="#" title="Обратная связь">Обратная связь</a></li>
+            </ul>
+            <p class="footer__text footer__text_smaler">Дизайн сайта <a href="#" title="" class="footer__link">StylePix</a></p>
+            <p class="footer__text footer__text_smaler">Разработка <a href="#" title="" class="footer__link">OWOX</a></p>
+          </div>
+        </div>
+      </footer>
+      <!--end footer-->
+    </section>
+  </body>
+  <script src="js/app.js" async></script>
+</html>

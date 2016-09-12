@@ -1,0 +1,54 @@
+extends _layout
+block title
+   title cart
+
+
+block content
+      .cart-holder
+         .overlay
+         .cart__main
+            +cart('1 товар' ,'Вернем на Ваш счет 629 грн')
+            +cart('3 товара' ,'Вернем на Ваш счет 1000 грн')
+
+
+          mixin cart(itemsAm, cashbackAm)
+
+            .cart
+               btn.close.cart__close
+               h6.heading.cart__heading Добавлен в корзину
+               .cart__row
+                  button.delete.cart__row-delete
+                  .product.cart__product
+                     .product__img(role="img")
+                     .product__text-wrap.product__text-wrap_cart
+                        a.blue-link(href="#") Samsung UE40F8000ATXUA
+                        span.product__code код 789789
+                  .cart__counter
+                     button.cart__decr
+                     input.input-text.cart__ammount(value="1")
+                     button.cart__incr
+                  .cart__price-wrap
+                     span.cart__price 19 787 #[span.cart__curr грн]
+                     p.cart__cashback-text Возврат на счет
+                     .cart__cashback-ammount 629 грн
+                        +hint('cart__hint')
+               .cart__content
+                  p.cart__total-sum В корзине #[a(href="#").simple-link=itemsAm] на сумму 19 787 грн
+                  p.cart__total-cashback-sum=cashbackAm
+                  button.btn.cart__order-btn Оформить заказ
+                  a(href="#").cart__continue.link Продолжить покупки
+                  p.cart__out-text Товар сохранится в корзине
+
+
+
+
+
+
+
+
+
+
+
+
+
+

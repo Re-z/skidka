@@ -1,0 +1,2844 @@
+.header
+	background-color: #1f6ec3
+	background-image: linear-gradient(to top, rgba(0, 1, 1, 0.01) 0%, rgba(54, 54, 54, 0.01) 35%, rgba(95, 95, 95, 0.01) 35%, rgba(177, 177, 177, 0.01) 100%)
+	border: 1px solid rgba(0, 1, 1, 0.24)
+	color: $white
+	font-size: $foz12
+	min-width: $minWidth
+
+	&__inner
+		+inner
+		height: 30px
+		line-height: 30px
+		position: relative
+		padding-left: 237px
+		padding-right: 50px
+		+clr
+
+.nav
+	float: left
+	li
+		display: inline-block
+		margin-right: 31px
+		&:last-of-type
+			margin-right: 0
+	a
+		color: $white
+		transition: .5s
+		&:hover
+			color: #f9da00
+
+.schedule-btn
+	float: left
+	margin-right: 165px
+	position: relative
+	cursor: pointer
+	line-height: 30px
+	color: $white
+	&:before
+		display: inline-block
+		content: ''
+		+s(schedule)
+		margin-right: 13px
+		vertical-align: middle
+	&:after
+		display: block
+		content: ''
+		+s(yellow-border)
+		position: absolute
+		bottom: 0
+		right: -10px
+.cabinet-btn
+	@extend .schedule-btn
+	margin-right: auto
+	float: right
+	&:before
+		+s(user-ico)
+		margin-right: 21px
+	&:after
+		+s(yellow-border_big)
+		right: -7px
+
+.schedule
+	display: none
+	width: 267px
+	background-color: white
+	border-radius: 5px
+	box-shadow: 0 0 10px rgba(2, 3, 3, 0.39)
+	position: absolute
+	left: 140px
+	top: 33px
+	padding: 8px 30px 0 10px
+	line-height: initial
+	z-index: 15
+
+	&__item
+		padding-left: 33px
+		margin-bottom: 13px
+	&__text
+		color: $almostBlack
+		font-size: 14px
+		line-height: 24px
+	&__close
+		position: absolute
+		top: 10px
+		right: 10px
+
+
+.intro
+	&__inner
+		+inner
+		padding: 8px 10px 8px 42px
+
+.logo
+	display: inline-block
+	+s(logo)
+	vertical-align: middle
+	margin-right: 80px
+
+.tel
+	display: inline-block
+	vertical-align: middle
+	margin-right: 70px
+	position: relative
+	margin-top: 15px
+	&__main
+		color: #4c4c4c
+		font-size: 18px
+		font-weight: 700
+		line-height: 24px
+		cursor: pointer
+		&:before
+			+s(tel)
+			display: inline-block
+			content: ''
+			margin-right: 7px
+	&__arrow
+		display: inline-block
+		width: 19px
+		height: 22px
+		vertical-align: middle
+		position: relative
+		background-color: white
+		&:after
+			+pseudo
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -4.5px
+			margin-top: -3px
+			+s(arr-down)
+		&.is-active
+			box-shadow: 0 0 5px rgba(2, 3, 3, 0.39)
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+			&:before
+				+pseudo
+				position: absolute
+				bottom: -4px
+				left: 0
+				width: 100%
+				height: 8px
+				background: $white
+				z-index: 15
+	&__callback
+		cursor: pointer
+		display: inline-block
+		margin-left: 20px
+		background: transparent
+
+	&__popup
+		display: none
+		width: 191px
+		background-color: white
+		border-radius: 5px
+		box-shadow: 0 0 5px rgba(2, 3, 3, 0.39)
+		position: absolute
+		top: 25px
+		left: 0
+		z-index: 10
+		padding: 6px 12px
+
+.callback
+	display: none
+	width: 348px
+	background-color: white
+	border-radius: 5px
+	box-shadow: 0 0 10px rgba(2, 3, 3, 0.39)
+	position: absolute
+	top: 28px
+	left: 0
+	padding: 12px 10px 20px 10px
+	z-index: 9
+	&__text
+		font-size: $foz12
+		margin-top: 10px
+		margin-bottom: 10px
+	&__name
+		width: 276px
+	&__name-wrap
+		margin-top: 8px
+		margin-bottom: 20px
+	&__tel
+		width: 150px
+		margin-top: 8px
+	&__submit
+		margin-left: 5px
+		margin-right: 5px
+	&__close
+		position: absolute
+		top: 10px
+		right: 10px
+
+.search
+	display: inline-block
+	margin-right: 65px
+	&__query
+		width: 420px
+	&__query-wrap
+		margin-right: 5px
+
+
+.in-cart
+	padding-left: 40px
+	margin-top: 10px
+	max-width: 160px
+	display: inline-block
+	position: relative
+	vertical-align: middle
+	&:before
+		+pseudo
+		+s(cart)
+		position: absolute
+		left: 0
+		top: 0
+	&__title
+		color: #4c4c4c
+		font-size: $foz12
+		font-weight: 700
+	&__text
+		@extend .in-cart__title
+		font-weight: 400
+		&.is-empty
+			color: #d5d5d5
+
+
+
+.menu
+	position: relative
+	z-index: 6
+	&__inner-wrap
+		width: $minWidth
+		margin: 0 auto
+		padding: 0 10px
+	&__inner
+		position: relative
+		width: 100%
+		height: 43px
+		line-height: 43px
+		background: lightgray //ie fix
+		background: linear-gradient(to bottom, $white 0%, #F4F4F4 10%, #E5E5E5 100% )
+		border: 1px solid rgba(0, 1, 1, 0.24)
+		border-radius: 5px
+		box-shadow: inset 0 2px 0 white
+		display: table
+	&__list
+		list-style: none
+		display: table-row
+	&__item
+		padding: 0 21px
+		position: relative
+		display: table-cell
+		&:after
+			+pseudo
+			position: absolute
+			bottom: 0
+			right: 0
+			+s(m-menu-border)
+		&:last-of-type:after
+			display: none
+
+	&__trigger
+		display: block
+		background: transparent
+		padding: 0 15px
+		font-size: 12px
+		font-weight: 700
+		cursor: pointer
+		&:hover
+			//background-color: #266dba
+			background: linear-gradient(to bottom, #2771BD 0%, #2569B7 50%, #1E56AC 100%)
+			color: $white
+		&.is-active
+			color: #2a71bd
+			&:hover
+				color: $white
+		&.js-opened
+			@extend .menu__trigger:hover
+
+
+.dropdown
+	display: none
+	//height: 535px
+	padding-bottom: 10px
+	padding-top: 5px
+	width: 100%
+	position: absolute
+	top: 40px
+	left: 0
+	border: 2px solid #1e56ac
+	border-bottom-left-radius: 5px
+	border-bottom-right-radius: 5px
+	z-index: 6
+	background: $white
+	+clr
+	&__col
+		height: inherit
+		width: 25%
+		float: left
+		padding-left: 20px
+		&:nth-of-type(2)
+			padding-left: 31px
+		&:nth-of-type(3)
+			padding-left: 43px
+		&:nth-of-type(4)
+			padding-left: 45px
+
+	&__category
+		margin-bottom: 16px
+	&__title
+		font-size: 14px
+		letter-spacing: -0.7px
+	&__list
+		line-height: 1.2
+		& li
+			margin-bottom: 6px
+			&:last-of-type
+				margin-bottom: 0
+		& a
+			font-size: 12px
+			color: #266ba5
+	&__banner
+		display: block
+		width: 240px
+		height: 450px
+		background-size: cover
+		margin-top: 18px
+
+
+.hint-block
+	&__inner-wrap
+		width: $minWidth
+		padding: 0 10px
+		margin: 0 auto
+
+	&__inner
+		height: 37px
+		background: $yellow //ie fix
+		background: linear-gradient(to bottom, #FFD600 60%, #FFC400 100%)
+		border: 1px solid rgba(0, 1, 1, 0.24)
+		border-bottom-left-radius: 5px
+		border-bottom-right-radius: 5px
+		box-shadow: inset 0 2px 0 white
+		position: relative
+		top: -12px
+		text-align: center
+		padding-top: 14px
+	&__text
+		font-size: 12px
+		border-bottom: 1px dashed $lightBlack
+		color: $lightBlack
+
+.slider-wrap
+	position: relative
+	&__inner
+		+inner
+		+padding
+		min-height: 265px //
+		+clr
+.slider
+	float: left
+	width: 960px
+	position: relative
+	&__item
+		display: block
+		background-size: cover
+		height: 265px
+		width: 960px
+
+
+//customizing slider
+.slick-dots
+	text-align: left
+	bottom: 10px
+	left: 8px
+	& button
+		width: 15px
+		height: 15px
+		box-shadow: none
+		border: 2px solid #d3e1eb
+	& li.slick-active button
+		background: $yellow
+		box-shadow: 0 0 0 2px $white inset
+
+.discount-banner
+	float: right
+	+s(discount-banner)
+
+
+.brands
+	margin-top: 22px
+	&__inner
+		+inner
+		+padding
+	&__next
+		right: -30px
+	&__prev
+		left: -30px
+	&__slider
+		position: relative
+	&__content
+		margin: 0 -18px
+		+clr
+	&__item
+		display: block
+		width: 140px
+		float: left
+
+		padding: 0 18px
+
+	&__cashback
+		font-size: 12px
+		color: $gray
+		text-decoration: underline
+		display: inline-block
+		margin-right: 5px
+	&__cashback-ammount
+		color: $titleColor
+		font-weight: 700
+		vertical-align: middle
+
+
+//adding bkg to brands__logo
+$brands: 'ali', 'carters', 'victoria', 'gymboree', 'lamoda' ,'oldnavy', 'wallmart'
+@each $item in $brands
+	.brands__logo.#{$item}
+		height: 85px
+		background-color: white
+		border-radius: 5px
+		+s($item)
+		margin-bottom: 5px
+
+
+.discounts
+	margin-top: 42px
+	&__inner
+		+inner
+		+padding
+	&__more
+		margin-left: 13px
+		display: inline-block
+	&__slider
+		position: relative
+	&__content
+		margin: 0 -12px
+	&__prev, &__next
+		margin-top: -95px
+	&__prev
+		left: -30px
+	&__next
+		right: -30px
+
+.recomends
+	margin-top: 45px
+	&__inner
+		+inner
+		+padding
+	&__more
+		@extend .discounts__more
+	&__slider
+		@extend .discounts__slider
+	&__content
+		@extend .discounts__content
+	&__prev
+		@extend .discounts__prev
+	&__next
+		@extend .discounts__next
+
+
+.why-us
+	margin-top: 33px
+	&__inner
+		+inner
+		+clr
+		+padding
+
+$whyUsItem: 'cert','discount','guarantee','credit'
+@each $item in $whyUsItem
+	.why-us__#{$item}
+		+s($item)
+		float: left
+		margin-right: 25px
+
+.why-us__credit
+	float: right
+	margin-right: 0
+
+.guarantees
+	margin-top: 35px
+	margin-bottom: 42px
+	&__inner
+		+inner
+		border-radius: 4px
+		+padding
+	&__title
+		background-color: $lightBlue
+		padding-left: 27px
+		height: 58px
+		line-height: 58px
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+	&__box
+		border: 1px solid rgba(31, 102, 178, 0.11)
+		height: 230px
+		border-bottom-left-radius: 5px
+		border-bottom-right-radius: 5px
+		position: relative
+		background: url("../img/guarantees-bg.png") right center no-repeat
+		padding: 40px
+
+		&:after
+			+pseudo
+			+s(guarantees-girl)
+			position: absolute
+			right: 90px
+			bottom: 0
+	&__list
+		& li
+			color: #6c767c
+			max-width: 710px
+			position: relative
+			padding-left: 40px
+			margin-bottom: 24px
+			&:before
+				+pseudo
+				position: absolute
+				top: 0
+				left: 0
+				+s(list-check)
+			& strong
+				color: #31373b
+
+
+.footer
+	background-color: $lightBlue
+	border-top: 2px solid $yellow
+	min-width: $minWidth
+	&__inner
+		+inner
+		padding: 15px 10px 0 10px
+		+clr
+	&__col
+		float: left
+		&_shop
+			margin-right: 70px
+		&_buyer
+			margin-right: 118px
+		&_subscr
+			margin-right: 110px
+	&__list
+		padding-bottom: 17px
+		margin-top: 13px
+
+		& li
+			margin-bottom: 6px
+		& a
+			color: $linksColor
+			font-size: 12px
+			&:hover
+				text-decoration: underline
+	&__subtext
+		color: #6c767c
+		font-size: 11px
+		line-height: 17px
+	&__text
+		color: $middleGray
+		font-size: 12px
+		margin-bottom: 9px
+		&_margin
+			margin-top: 13px
+		&_smaler
+			font-size: 11px
+	&__link
+		font-size: 11px
+		color: $linksColor
+		&:hover
+			text-decoration: underline
+	&__subscription
+		margin-bottom: 19px
+	&__email-wrap
+		display: inline-block
+		margin-right: 10px
+	&__email
+		width: 300px
+
+
+.socials
+	font-size: 0
+	& li
+		display: inline-block
+		margin-right: 5px
+
+
+$Socials: 'vk','goo','fb'
+@each $item in $Socials
+	.socials__#{$item}
+		+s($item)
+		display: block
+		&:hover
+			+sp(#{$item}-hov)
+		&:active
+			+sp(#{$item}-press)
+
+
+
+
+
+
+
+//start 404 page
+.p404
+	position: relative
+	&__inner
+		+inner
+		padding: 0 10px 40px 10px
+	&__content
+		margin-top: 15px
+		+clr
+	&__box
+		width: 735px
+		padding-left: 160px
+		float: left
+	&__img
+		+s(404)
+	&__text
+		line-height: 22px
+		max-width: 486px
+	&__form-wrap
+		float: left
+
+.form
+	max-width: 280px
+	&__main
+		width: 280px
+		+clr
+	&__name-wrap
+		margin-top: 7px
+		display: block
+		position: relative
+		&:before
+			+pseudo
+			position: absolute
+			top: 7px
+			left: 12px
+			z-index: 1
+			+s(user-ico-blue)
+		&:after
+			+pseudo
+			position: absolute
+			top: 5px
+			left: 32px
+			width: 1px
+			height: 20px
+			background: #cbd3d6
+			z-index: 1
+	&__name
+		width: 100%
+		padding-left: 40px
+	&__surname-wrap
+		margin: 10px 0 25px 32px
+		display: block
+	&__surname
+		width: 100%
+	&__email-wrap
+		@extend .form__name-wrap
+		margin-bottom: 25px
+		&:before
+			@extend .form__name-wrap:before
+			+s(email)
+			top: 9px
+			left: 9px
+	&__email
+		@extend .form__name
+	&__tel-wrap
+		@extend .form__name-wrap
+		margin-bottom: 25px
+		&:before
+			@extend .form__name-wrap:before
+			+s(tel-blue)
+			top: 9px
+			left: 9px
+	&__tel
+		@extend .form__name
+	&__textarea
+		width: 100%
+		margin-top: 7px
+		resize: none
+		padding: 10px
+	&__submit
+		margin-top: 20px
+		float: right
+		&_fl
+			float: left
+
+	&__pass-wrap
+		@extend .form__name-wrap
+		&:before
+			@extend .form__name-wrap:before
+			+s(key)
+			top: 9px
+			left: 9px
+	&__pass
+		@extend .form__name
+	&__pass-repeat-wrap
+		@extend .form__surname-wrap
+		margin-bottom: 13px
+	&__pass-repeat
+		@extend .form__surname
+	&__card-wrap
+		@extend .form__name-wrap
+		margin-bottom: 16px
+		&:before
+			@extend .form__name-wrap:before
+			+s(bank-card)
+			left: 7px
+			top: 9px
+	&__card
+		@extend .form__name
+
+
+	&__cvv
+		@extend .form__name
+		width: 50px
+		padding: 0 10px
+
+//contacts
+.contacts
+	position: relative
+	&__inner
+		+inner
+		padding: 0 10px 22px 10px
+	&__content
+		margin-top: 15px
+		+clr
+
+	&__heading
+		position: relative
+		&:after
+			+pseudo
+			width: 956px
+			border: 1px dashed #cbd3d6
+			position: absolute
+			right: 0
+			bottom: 0
+	&__welcome-img
+		+s(contacts-welcome-img)
+		display: inline-block
+		vertical-align: top
+		margin-right: 60px
+	&__col
+		display: inline-block
+		vertical-align: top
+		&_tel
+			width: 140px
+			margin-right: 100px
+		&_schedule
+			margin-right: 105px
+	&__col-or
+		display: block
+		margin: 5px 0 0 22px
+	&__col-item
+		@extend .schedule__item
+	&__col-text
+		@extend .schedule__text
+	&__col-span
+		color: #b9b9b9
+		font-size: 12px
+		margin-bottom: 10px
+	&__schedule-text
+		display: inline-block
+		margin-bottom: 7px
+		& strong
+			display: block
+			min-width: 70px
+	&__map-wrap
+		float: left
+		margin-right: 103px
+		width: 711px
+		padding: 7px 15px 460px 245px
+		position: relative
+		& p
+			line-height: 24px
+
+	&__map-links
+		position: absolute
+		left: 30px
+		top: -75px
+	&__aside-box
+		float: left
+		max-width: 310px
+		padding-top: 10px
+		+clr
+
+	&__aside-text
+		line-height: 24px
+		margin-bottom: 24px
+	&__aside-title
+		margin-top: 28px
+
+	&__aside-link
+		color: $linksColor
+
+
+
+
+.map-wrap
+	width: 711px
+	height: 393px
+	border: 2px solid #F0F5FA
+	position: absolute
+	left: 0
+	bottom: 53px
+	margin-top: 20px
+#map
+	height: inherit
+
+
+//reg
+.reg
+	position: relative
+	&__inner
+		+inner
+		+padding
+	&__content
+		margin-top: 15px
+		padding-left: 45px
+		padding-bottom: 80px
+		+clr
+	&__box
+		float: left
+	&__user-img
+		float: left
+		+s(user-img)
+		margin-right: 72px
+	&__form-wrap
+		float: left
+	&__form
+		margin-bottom: 30px
+	&__form-submit
+		margin-top: 6px
+	&__socials
+		text-align: center
+		margin-top: 7px
+		position: relative
+		left: -12px
+	&__text-block
+		width: 571px
+		background: #F4FAFF //ie fix
+		background-image: linear-gradient(to top, #f6fbff 0%, #e8f5ff 100%)
+		border-radius: 10px
+		float: right
+		position: relative
+		padding: 20px 10px 200px 25px
+		& p
+			line-height: 24px
+	&__heading
+		margin-top: 25px
+	&__discount-card
+		+s(discount-card)
+		position: absolute
+		bottom: 0
+		left: 50%
+		margin-left: -118px
+
+
+
+
+.compare
+	position: relative
+	&__inner
+		+inner
+		padding: 0 10px 70px 10px
+
+	&__heading
+		+clr
+		margin-bottom: 4px
+	&__aside
+		width: 200px
+		float: left
+		min-height: 355px
+		position: relative
+	&__title
+		padding-bottom: 10px
+	&__list
+		padding-bottom: 60px
+	&__list-item
+		margin-bottom: 5px
+	&__list-item-close
+		display: inline-block
+		margin-right: 10px
+		vertical-align: middle
+	&__item-link
+		font-size: 14px
+	&__items
+		float: right
+		max-width: 955px
+		+clr
+		min-height: 372px
+	&__sort-btns
+		position: absolute
+		bottom: 0
+		left: 0
+
+.chars
+	width: 100%
+	display: table
+	+clr
+
+	&__title
+		color: #616161
+		font-size: 16px
+		font-weight: 700
+		line-height: 30px
+		padding-left: 2px
+		display: table-caption
+		background-color: #f9f9f9
+
+
+	&__row
+		display: table-row
+		vertical-align: middle
+	& .has-bg
+		background-color: #f9f9f9
+	&__cell
+		display: table-cell
+		vertical-align: middle
+		width: 20%
+		padding: 5px 0
+
+	&__char-name
+		color: $gray
+		display: inline-block
+	&__char-value
+		padding-left: 5px
+	&__hint
+		margin-left: 10px
+
+
+.reviews
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 40px
+	&__title
+		padding-bottom: 7px
+	&__content
+		+clr
+
+
+	&__aside
+		width: 225px //
+		float: left
+	&__category-list
+		& a
+			color: #898989
+			font-size: 10px
+			vertical-align: text-bottom
+			margin-left: 5px
+	&__articles
+		float: right
+		width: 956px
+
+.subscr
+	width: 100%
+	border: 3px solid $lightBlue
+	border-radius: 5px
+	padding:  15px 15px 30px 15px
+	margin-top: 33px
+	text-align: center
+	&__heading
+		padding-bottom: 4px
+
+	&__name-wrap
+		margin-top: 22px
+	&__email-wrap
+		margin-top: 20px
+	&__submit
+		margin: 20px auto 34px auto
+
+
+
+.result
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 40px
+
+	&__content
+		+clr
+	&__title
+		padding-bottom: 13px
+	&__box
+		float: right
+		width: 956px
+		margin-bottom: 70px
+	&__aside-nav
+		float: left
+	&__items-wrap
+		margin-top: 20px
+		+clr
+
+
+
+
+.recently
+	&__content
+		margin: 0 -12px
+	&__slider
+		position: relative
+	&__next
+		top: 105px
+		right: -25px
+	&__prev
+		top: 105px
+		left: -25px
+
+
+
+
+.portal
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 50px
+	&__title
+		padding-bottom: 13px
+	&__content
+		+clr
+		margin-bottom: 10px
+	&__aside-nav
+		float: left
+	&__box
+		float: right
+		width: 960px
+		+clr
+	&__slider
+		float: none
+	&__items-wrap
+		font-size: 0
+		margin-left: -13px
+		margin-top: 5px
+	&__text-wrap
+		margin-top: 40px
+	&__text
+		font-size: 12px
+		line-height: 18px
+		color: #ADADAD
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 0
+
+
+
+
+.cat-item
+	width: 243px
+	min-height: 320px
+	background-color: white
+	border-radius: 5px
+	display: inline-block
+	vertical-align: top
+	transition: padding 1s
+	padding: 20px 15px
+	border: 1px solid transparent
+	&:hover
+		box-shadow: 0 0 11px rgba(3, 3, 3, 0.16)
+		border: 1px solid #3074bc
+	&__img
+		display: block
+		margin: 0 auto 7px auto
+		width: 100px
+		height: 100px
+	&__link
+		font-size: 14px
+		line-height: 22px
+		text-decoration: underline
+		font-weight: 400
+		margin-bottom: 16px
+		display: inline-block
+
+
+.we-recomend
+	+clr
+
+
+
+.thanks
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 53px
+
+	&__content
+		+clr
+		padding-left: 53px
+		padding-top: 13px
+		padding-right: 140px
+	&__img
+		float: left
+		background: url("../img/thanks-img.jpg") center center no-repeat
+		width: 339px
+		height: 437px
+		margin-top: 45px
+	&__box
+		float: right
+		width:  572px
+		margin-bottom: 41px
+	&__heading
+		padding-bottom: 25px
+	&__text
+		line-height: 18px
+	&__row
+		+clr
+		margin-top: 30px
+		height: 30px
+		line-height: 30px
+	&__number-wrap
+		float: left
+	&__number-text
+		+roboto
+		font-size: 18px
+		color: #242424
+	&__number
+		color: #e24733
+		margin-left: 3px
+	&__print
+		float: right
+	&__check
+		margin-top: 15px
+		padding-top: 8px
+		padding-left: 23px
+
+.print
+	&__link
+		@extend .link
+		font-size: 14px
+.print-ico
+	display: inline-block
+	+s(print)
+	margin-right: 10px
+	vertical-align: middle
+
+
+
+
+
+.check
+	//width: 571px
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	&_history
+		border: none
+		margin-bottom: 22px
+		border-radius: 0
+
+	&__item
+		padding-left: 12px
+		margin-bottom: 20px
+		&_last
+			margin-bottom: 10px
+		&_history
+			padding-left: 20px
+
+	&__product
+		display: inline-block
+		padding-left: 10px
+		width: 340px
+		&_history
+			width: 561px
+
+	&__product-name
+		color: #005c9d
+		&:hover
+			color: #5996d9
+	&__heading
+		margin-bottom: 7px
+
+	&__code
+		color: #bebebe
+		font-size: 11px
+		display: block
+		margin-top: 6px
+	&__reply
+		display: inline-block
+		&:before
+			display: inline-block
+			content: ''
+			+s(reply)
+			margin-right: 5px
+			vertical-align: middle
+
+	&__img
+		display: inline-block
+		vertical-align: middle
+		margin-right: 14px
+		max-width: 80px
+		+s(check-img)
+	&__text-wrap
+		display: inline-block
+		vertical-align: top
+		width: 230px
+		padding-top: 8px
+		&_history
+			padding-top: 18px
+			width: 400px
+	&__amount-wrap
+		display: inline-block
+		width: 80px
+		vertical-align: super
+		&_history
+			width: 150px
+	&__amount
+		color: #848484
+
+
+	&__price-wrap
+		display: inline-block
+		vertical-align: super
+		width: 102px
+		text-align: left
+		&_history
+			width: auto
+			display: block
+			float: left
+			margin-left: 5px
+	&__price
+		color: #1f1f23
+		font-weight: 700
+		&_history
+			font-weight: 400
+	&__currency
+		color: #1f1f23
+		margin-left: 5px
+	&__cashback-wrap
+		height: 32px
+		line-height: 32px
+		border-top: 1px dashed #d2dfe5
+		border-bottom: 1px dashed #d2dfe5
+		text-align: right
+		+clr
+		&_history
+			background-color: #fffceb
+			border: none
+			padding-left: 18px
+			border-bottom: 1px solid #d2dfe5
+
+
+	&__cashback-text-wrap
+		width: 715px
+		float: left
+	&__cashback-text
+		color: $gray
+		font-family: Tahoma, sans-serif
+		font-size: 11px
+		vertical-align: super
+	&__cashback-link
+		color: #005c9d
+		font-family: Tahoma, sans-serif
+		font-size: 11px
+	&__cashback-total
+		color: #105ebe
+		font-weight: 700
+	&__cashback-currency
+		color: #105ebe
+	&__hint
+		margin-right: 10px
+		margin-left: 5px
+		vertical-align: inherit
+
+	&__total-wrap
+		height: 50px
+		line-height: 50px
+		text-align: right
+
+	&__total-text
+		margin-right: 15px
+		vertical-align: super
+	&__sum-wrap //refers to history section
+		border-top: 1px dashed #d2dfe5
+		padding: 5px 0 5px 18px
+
+	&__sum-text
+		display: inline-block
+		vertical-align: middle
+		width: 150px
+		text-align: right
+		padding-right: 14px
+	&__sum
+		display: inline-block
+		vertical-align: middle
+	&__source
+		width: 561px
+		display: inline-block
+		vertical-align: middle
+		& span
+			font-size: 12px
+			color: #898989
+	&__source-link
+		font-size: 12px
+
+
+
+
+.checks
+	&__total-wrap
+		height: 50px
+		line-height: 50px
+		text-align: right
+		&_history
+			height: auto
+			line-height: initial
+			+clr
+
+	&__total-text
+		color: #1167a4
+		font-size: 18px
+		vertical-align: top
+		margin-right: 15px
+		&_history
+			width: 715px
+			margin-right: 0
+			float: left
+	&__price-wrap
+		@extend .check__price-wrap
+	&__price
+		@extend .check__price
+	&__total-price
+		color: #1167a4
+		font-size: 18px
+		vertical-align: super
+		&_history
+			float: left
+			margin-left: 22px
+	&__currency
+		@extend .check__currency
+	&__total-currency
+		@extend .check__currency
+		color: #1167a4
+		vertical-align: top
+	&__cashback-wrap
+		@extend .check__cashback-wrap
+		border: none
+		height: auto
+		line-height: initial
+		&_history
+			@extend .check__cashback-wrap_history
+			background: transparent
+			margin-top: 7px
+			+clr
+	&__cashback-text-wrap
+		@extend .check__cashback-text-wrap
+	&__cashback-link
+		@extend .check__cashback-link
+
+
+
+	&__footer
+		background-color: #f3f9ff
+		padding-bottom: 12px
+		padding-top: 10px
+
+
+
+
+
+.cab
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 55px
+
+	&__heading
+		margin-top: 15px
+	&__tabs-wrap
+		margin-top: 24px
+		position: relative
+
+	&__logout
+		position: absolute
+		right: 0
+		bottom: 3px
+
+
+.tabs
+	border-bottom: 1px solid #7fadce
+	padding-left: 25px
+	&__tab
+		height: 35px
+		@extend .heading
+		vertical-align: bottom
+		line-height: 35px
+		border: 1px solid #7fadce
+		border-bottom: none
+		border-top-right-radius: 5px
+		border-top-left-radius: 5px
+		padding: 0 28px 0 28px
+		position: relative
+		margin-right: 5px
+		overflow: visible
+
+
+		&.is-active
+			height: 44px
+			padding-top: 10px
+			color: #266db9
+			&:after
+				+pseudo
+				width: 100%
+				position: absolute
+				bottom: -2px
+				left: 0
+				border-bottom: 3px solid white
+
+.cashback-status
+	width: 271px
+	height: 105px //
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	margin: 0 auto
+	padding: 3px 5px
+	text-align: center
+	&__title
+		padding-bottom: 0
+	&__sum
+		color: #266db9
+		font-size: 24px
+		font-weight: 700
+		line-height: 30px
+		& span
+			font-size: 14px
+			font-weight: 400
+	&__details
+		width: 100%
+		font-size: 20px
+		height: 38px
+		line-height: 38px
+
+
+.personal
+	display: block
+	padding-top: 37px
+	padding-left: 45px
+	+clr
+	&__data
+		float: left
+		width: 478px
+		+clr
+
+	&__img
+		+s(user-img)
+		float: left
+		margin-top: 10px
+	&__form
+		float: right
+		width: 280px
+	&__heading
+		padding-bottom: 19px
+	&__btn
+		margin-top: 5px
+		font-size: 14px
+
+	&__address
+		width: 548px
+		float: right
+	&__address-item
+		width: 548px
+		margin-bottom: 20px
+
+
+	&__address-text
+		&:before
+			content: ''
+			position: absolute
+			left: -30px
+			top: 50%
+			margin-top: -6px
+			+s(location-marker)
+
+	&__add-address
+		font-size: 14px
+		margin-left: 5px
+
+
+
+
+
+
+
+
+.edit-item
+	min-height: 65px
+	background-color: white
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	padding: 0 0 0 45px
+	margin-bottom: 20px
+	&__text
+		color: #848484
+		display: inline-block
+		width: 363px
+		vertical-align: middle
+		position: relative
+	&__edit-block
+		display: inline-block
+		max-width: 130px
+		height: 100%
+		vertical-align: middle
+		padding-top: 5px
+	&__edit
+		&:before
+			display: inline-block
+			vertical-align: middle
+			content: ''
+			+s(pen)
+			margin-right: 7px
+		&:hover:before
+			@extend .edit-item__edit:before
+			+s(pen-hov)
+	&__main
+		&:before
+			@extend .edit-item__edit:before
+			+s(check)
+		&:hover:before
+			@extend .edit-item__edit:before
+			+s(check-hov)
+		&.is-active
+			color: #1167a4
+			font-weight: 700
+			text-decoration: none
+		&.is-active:before
+			+s(check-active)
+
+	&__del
+		&:before
+			@extend .edit-item__edit:before
+			+s(cross-delete)
+			margin-right: 9px
+		&:hover:before
+			@extend .edit-item__edit:before
+			+s(cross-delete-hov)
+			margin-right: 9px
+
+.cashback
+	display: none
+	padding-top: 41px
+	padding-left: 61px
+	padding-right: 61px
+	&__header
+		+clr
+		min-height: 130px
+		border-bottom: 1px solid #d2dfe5
+	&__block
+		width: 512px
+		border: 1px solid #d2dfe5
+		border-radius: 5px
+		position: relative
+		padding: 10px 0 10px 135px
+		&_left
+			float: left
+		&_right
+			float: right
+
+	&__block-img
+		position: absolute
+		left: 0
+		top: 0
+		width: 105px
+		height: 100%
+		background-color: #6397d7
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+		display: inline-block
+		&_status:after
+			+pseudo
+			+s(cashback)
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-top: -28px
+			margin-left: -28px
+		&_friends:after
+			@extend .cashback__block-img_status:after
+			+s(friends)
+			margin-top: -23px
+			margin-left: -23px
+
+	&__heading
+		text-align: center
+	&__hint
+		margin-left: 5px
+		vertical-align: bottom
+	&__block-ammount
+		text-align: center
+		display: block
+	&__widthdraw
+		margin: 17px auto 0 auto
+		text-align: center
+	&__widthdraw-btn
+		height: 38px
+		line-height: 38px
+		font-size: 20px
+		padding: 0 45px
+	&__widthdraw-hint
+		vertical-align: middle
+		margin-left: 10px
+
+	&__hint-box
+		background-color: #f6fbfe
+		border: 1px solid #d2dfe5
+		border-radius: 5px
+		margin-top: 30px
+		position: relative
+		padding: 15px 40px 15px 107px
+		&:before
+			+pseudo
+			position: absolute
+			+s(hint-box-ico)
+			top: 50%
+			margin-top: -16px
+			left: 35px
+	&__hint-box-text
+		font-size: 12px
+		line-height: 18px
+		color: #646d7b
+	&__hint-box-link
+		color: $linksColor
+		text-decoration: underline
+		&:hover
+			color: #5997da
+
+
+.heading .ammount
+	@extend .ammount
+.heading .ammount__cur
+	@extend .ammount__cur
+
+
+
+
+.ammount
+	color: #266db9
+	font-size: 36px
+	font-weight: 700
+	line-height: 30px
+	font-family: Arial, sans-serif
+
+	&__cur
+		color: #266db9
+		font-size: 24px
+		font-weight: 400
+
+
+.history
+	display: none
+	&__inner
+		width:  875px
+		margin: 0 auto
+		padding-top: 40px
+	&__item
+		border: 1px solid #d2dfe5
+		border-radius: 5px
+		margin-bottom: 10px
+		&:hover
+			border-color: $linksColor
+		&.is-done
+			& .history__status-ico:after
+				+pseudo
+				position: absolute
+				+s(check-active)
+				left: 50%
+				top: 50%
+				margin-left: -5px
+				margin-top: -4px
+		&.is-waiting
+			& .history__status-ico:after
+				+pseudo
+				position: absolute
+				left: 50%
+				top: 50%
+				+s(red-clock)
+				margin-left: -7px
+				margin-top: -7px
+
+		&.is-cancelled
+			& .history__status-ico:after
+				+pseudo
+				position: absolute
+				left: 50%
+				top: 50%
+				+s(red-cross)
+				margin-left: -5px
+				margin-top: -5px
+
+		&.is-waiting, &.is-cancelled
+			& .history__status
+				font-weight: 400
+				color: #848484
+	&__head
+		cursor: pointer
+
+	&__item-body
+		display: none
+		&.is-visible
+			display: block
+
+	&__intro
+		font-size: 0
+		padding-top: 12px
+		padding-bottom: 7px
+		padding-right: 8px
+		&.is-active
+			background-color: #f6f6f6
+
+		+clr
+	&__toggler
+		width: 54px
+		height: 25px
+		background: url("../img/arr-down-medium.png") center center no-repeat
+		display: inline-block
+		vertical-align: middle
+		border-right: 1px solid #d2dfe5
+		&.is-opened
+			background: url("../img/arr-up-medium.png") center center no-repeat
+
+	&__number
+		@extend .blue-link
+		font-size: 18px
+		vertical-align: middle
+		margin-left: 21px
+		display: inline
+	&__sum
+		font-size: 18px
+		color: $titleColor
+		display: inline-block
+		vertical-align: middle
+		margin-left: 7px
+	&__date
+		font-size: 12px
+		color: #848484
+		display: inline-block
+		vertical-align: middle
+		margin-left: 7px
+		white-space: pre
+		&.has-ico:before
+			display: inline-block
+			content: ''
+			+s(clock)
+			vertical-align: bottom
+			margin-right: 5px
+	&__status-ico
+		float: right
+		width: 23px
+		height: 23px
+		background-color: white
+		border: 2px solid #74a0cb
+		border-radius: 4px
+		position: relative
+
+
+
+	&__row
+		background-color: #f6f6f6
+		padding-left: 70px
+		padding-bottom: 5px
+		padding-top: 3px
+	&__row-date
+		display: inline-block
+		vertical-align: middle
+	&__row-status
+		display: inline-block
+		vertical-align: middle
+		margin-left: 18px
+	&__row-location
+		@extend .history__row-status
+	&__status
+		color: #242424
+		font-weight: 700
+		font-size: 12px
+		max-width: 492px
+		&:before
+			display: inline-block
+			content: ''
+			+s(info)
+			vertical-align: bottom
+			margin-right: 10px
+	&__location
+		color: #848484
+		font-size: 12px
+		&:before
+			@extend .history__status:before
+			+s(location-marker-thin)
+	&__names
+		background: #f6f6f6
+		line-height: 33px
+		border-top: 1px solid #d2dfe5
+		padding-left: 18px
+		margin-bottom: 20px
+
+	&__title
+		display: inline-block
+		color: #848484
+		height: 33px
+		&_name
+			width: 561px
+		&_ammount
+			width: 150px
+
+
+.wishlist
+	padding-top: 40px
+	display: none
+	&__intro
+		+clr
+	&__share
+		float: right
+	&__clear-wrap
+		float: left
+		position: relative
+
+	&__items-wrap
+		border: 1px solid #d2dfe5
+		border-right: none
+		border-left: none
+		padding: 18px 0 30px 0
+		margin-top: 10px
+		+clr
+
+	&__total
+		color: #1167a4
+		font-size: 18px
+		text-align: center
+		margin-top: 13px
+	&__total-sum
+		margin-left: 5px
+
+	&__total-cur
+		font-size: 14px
+		margin-left: 3px
+	&__buy-wrap
+		text-align: center
+		margin-top: 15px
+	&__buy
+		height: 38px
+		line-height: 38px
+		font-size: 20px
+		padding: 0 20px
+
+.wishlist-ico
+	display: inline-block
+	vertical-align: middle
+	margin-left: 10px
+	+s(wishlist-add-press)
+
+
+.bank
+	display: none
+	+clr
+	padding-top: 45px
+	padding-left: 45px
+	&__data
+		float: left
+		+clr
+	&__img
+		+s(bank-img)
+		float: left
+		margin-right: 65px
+		margin-top: 40px
+	&__form
+		float: left
+		width: 304px
+	&__cards-wrap
+		margin-top: 15px
+		margin-bottom: 22px
+	&__heading
+		padding-bottom: 19px
+	&__card
+		display: inline-block
+		margin-right: 15px
+		width: 90px
+		height: 50px
+		background-color: #fafbfc
+		border: 1px solid #cbd3d6
+		border-radius: 5px
+		position: relative
+		&:last-of-type
+			margin-right: 0
+		&_visa:after
+			display: inline-block
+			content: ''
+			+s(visa)
+			position: absolute
+			left: 50%
+			top: 50%
+			margin-left: -30px
+			margin-top: -10px
+		&_master:after
+			@extend .bank__card_visa:after
+			+s(master)
+			margin-left: -25px
+			margin-top: -15px
+	&__label
+		position: absolute
+		top: 40px
+		left: 50%
+		margin-left: -7px
+		line-height: initial
+	&__validity-wrap
+		margin-top: 5px
+		margin-bottom: 20px
+	&__month-wrap
+		width: 60px
+		height: 30px
+		border: 1px solid #cbd3d6
+		border-radius: 5px
+		position: relative
+		z-index: 1
+		background-color: #fafbfc
+		display: inline-block
+		&:after
+			+pseudo
+			position: absolute
+			right: 5px
+			top: 50%
+			margin-top: -3px
+			+s(arr-down)
+			z-index: -1
+
+	&__month
+		line-height: 30px
+		color: #848484
+		padding: 0 10px
+
+	&__month-select
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		opacity: 0
+		cursor: pointer
+	&__year-wrap
+		@extend .bank__month-wrap
+		width: 70px
+	&__year
+		@extend .bank__month
+	&__year-select
+		@extend .bank__month-select
+	&__separator
+		margin: 0 8px
+		color: #848484
+		display: inline-block
+	&__cvv-wrap
+		margin-top: 5px
+		margin-bottom: 17px
+	&__form-link
+		margin-left: 5px
+	&__form-hint
+		margin-left: 5px
+
+	&__manage
+		float: right
+		width: 550px
+	&__card-text
+		&:before
+			content: ''
+			position: absolute
+			left: -40px
+			top: 50%
+			margin-top: -5px
+			+s(visa-small)
+
+
+.prod
+	position: relative
+	&__inner
+		+inner
+		+padding
+		padding-bottom: 55px
+	&__title
+		padding-bottom: 0
+	&__this-code
+		color: #bebebe
+	&__content
+		margin-top: 15px
+	&__blocks-holder
+		margin-bottom: 40px
+
+
+
+
+.main
+	margin-top: 20px
+	padding-bottom: 40px
+	border-bottom: 1px solid #d2dfe5
+	+clr
+	&__imgs-wrap
+		width: 467px
+		float: left
+		margin-right: 23px
+		padding-top: 17px
+	&__img
+		display: block
+		margin: 0 auto
+		width: 425px
+		height: 295px
+
+
+	&__descr
+		width: 387px
+		float: left
+
+	&__descr-wrap
+		float: right
+
+	&__options-bar
+		margin-top: 5px
+	&__rating-wrap
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px
+	&__recalls-link
+		margin-right: 17px
+	&__wishlist-wrap
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+	&__wishlist-ico
+		+s(wishlist-add)
+		display: inline-block
+		vertical-align: middle
+		margin-right: 5px
+	&__compare-wrap
+		display: inline-block
+		vertical-align: middle
+	&__compare-ico
+		@extend .main__wishlist-ico
+		+s(radio)
+
+	&__chars-wrap
+		margin-top: 20px
+
+	&__descr-text
+		font-size: 12px
+		color: #343434
+		line-height: 1.7
+		& span
+			color: $gray
+	&__descr-footer
+		border-top: 1px solid #cbd3d6
+		margin-top: 18px
+		padding-top: 10px
+		+clr
+	&__share-wrap
+		float: right
+	&__share
+		+s(socials-widget)
+
+
+	&__conditions
+		width: 221px
+		background-color: white
+		border: 1px solid #d2dfe5
+		border-radius: 5px
+		float: right
+		padding:  14px 0 26px 52px
+	&__conditions-text
+		font-size: 12px
+		margin-bottom: 10px
+		&:last-of-type
+			margin-bottom: 0
+
+
+	&__deliv-heading
+		padding-bottom: 5px
+		&:before
+			+pseudo
+			+s(delivery)
+			position: absolute
+			left: -40px
+			top: 5px
+	&__pay-heading
+		@extend .main__deliv-heading
+		&:before
+			@extend .main__deliv-heading:before
+			+s(wallet)
+			top: 4px
+	&__guarant-heading
+		@extend .main__deliv-heading
+		&:before
+			@extend .main__deliv-heading:before
+			+s(thumbs-up)
+			top: 7px
+
+	&__conditions-pay
+		margin-top: 25px
+		margin-bottom: 22px
+	&__conditions-more
+		margin-top: 23px
+		display: inline-block
+		font-size: 14px
+
+.one-click
+	display: none
+	position: absolute
+	top: 40px
+	z-index: 5
+	width: 383px
+	min-height: 149px
+	background-color: white
+	border-radius: 5px
+	box-shadow: 0 0 10px rgba(2, 3, 3, 0.39)
+	padding: 12px
+	&__first-step
+		display: block
+	&__close
+		position: absolute
+		right: 10px
+		top: 10px
+		z-index: 1
+	&__text
+		font-size: 12px
+	&__form
+		margin-top: 12px
+	&__tel
+		width: 150px
+		margin-top: 8px
+	&__submit
+		margin-left: 5px
+	&__sec-step
+		display: none
+	&__accepted
+		+s(green-check-arr)
+		margin: 20px auto 0 auto
+	&__heading-accepted
+		text-align: center
+		margin-top: 20px
+
+
+
+.source-info
+	@extend .one-click
+	width: 550px
+	top: 30px
+	&__close
+		@extend .one-click__close
+	&__table
+		display: table
+		border-collapse: collapse
+		width: 100%
+	&__row
+		display: table-row
+		border-bottom: 1px solid #d2dfe5
+		&:last-of-type
+			border-bottom: none
+	&__key
+		display: table-cell
+		vertical-align: top
+		color: $gray
+		width: 205px
+		padding: 5px 0
+	&__value
+		display: table-cell
+		vertical-align: middle
+		min-height: 30px
+		padding: 5px 0
+
+
+
+
+
+
+
+
+.item-slider
+	position: relative
+	&__content
+		width: 411px
+		margin: 30px auto 0 auto
+	&__item
+		width: 90px
+		height: 68px
+		border: 1px solid #d2dfe5
+		margin-right: 17px
+
+	&__item-content
+		background-size: cover
+
+		background-position: center center
+		background-repeat: no-repeat
+		width: 66px
+		height: 66px
+		display: block
+		margin: 0 auto
+	&__next
+		right: 0
+	&__prev
+		left: 0
+
+
+.item-chars
+	padding-top: 20px
+	padding-bottom: 40px
+	border-bottom: 1px solid #d2dfe5
+	display: none
+	+clr
+	&__title-wrap
+		width: 290px
+		float: left
+	&__content
+		float: right
+		width:  875px
+	&__tables
+		+clr
+	&__table
+		width: 385px
+		display: table
+		border-collapse: collapse
+		float: left
+		&_right
+			float: right
+	&__row
+		display: table-row
+		border-bottom: 1px solid #d2dfe5
+		&:last-of-type
+			border-bottom: none
+	&__key
+		display: table-cell
+		width: 76%
+		padding: 6px 0
+		& p
+			color: $gray
+			display: inline-block
+	&__value
+		display: table-cell
+		padding: 6px 0
+		vertical-align: top
+
+	&__hint
+		display: inline-block
+		margin-left: 5px
+	&__more
+		font-size: 14px
+		margin-top: 12px
+		display: inline-block
+
+
+
+.recalls
+	padding-top: 20px
+	display: none
+	padding-bottom: 40px
+	border-bottom: 1px solid #d2dfe5
+	+clr
+	&__number
+		font-size: 12px
+		color: $gray
+	&__title-wrap
+		width: 290px
+		float: left
+	&__add
+		font-size: 14px
+		display: inline-block
+		margin-top: 10px
+	&__content
+		width: 875px
+		float: right
+	&__item
+		width: 875px
+		padding-bottom: 20px
+		border-bottom: 1px dashed #d2dfe5
+		+clr
+	&__item-details
+		float: left
+		width: 83px
+		padding-top: 13px
+
+	&__rating
+		+clr
+	&__bought
+		display: block
+		margin: 10px 0
+	&__item-author
+		color: #242424
+		font-weight: 700
+	&__item-date
+		color: $gray
+		font-size: 12px
+		margin-top: 5px
+	&__item-box
+		padding-top: 5px
+		float: right
+		width: 788px
+
+	&__item-content
+		background-color: #f6fbfe
+		border: 1px solid #d2dfe5
+		border-radius: 5px
+		padding: 10px 12px
+		& p
+			color: #636d7b
+			font-size: 14px
+			line-height: 20px
+	&__item-row
+		+clr
+		margin-top: 8px
+	&__reply
+		float: left
+	&__useful-wrap
+		float: right
+	&__useful-quest
+		font-size: 12px
+		margin-right: 10px
+	&__yes-wrap
+		display: inline-block
+		margin-right: 10px
+	&__yes-number
+		font-size: 12px
+		color: #333
+		margin-left: 3px
+	&__yes
+		color: #559d00
+		text-decoration: underline
+		font-size: 12px
+	&__no-wrap
+		display: inline-block
+	&__no
+		@extend .recalls__yes
+		color: #d54100
+	&__no-number
+		@extend .recalls__yes-number
+	&__more
+		margin-top: 10px
+		font-size: 14px
+		display: inline-block
+
+
+
+.descr
+	display: none
+	+clr
+	padding-top: 20px
+	padding-bottom: 40px
+	border-bottom: 1px solid #d2dfe5
+
+	&__title-wrap
+		width: 290px
+		float: left
+	&__content
+		float: right
+		width: 875px
+		padding: 5px 0
+		& h6
+			font-size: 18px
+			line-height: 18px
+			padding-bottom: 19px
+			font-weight: 400
+		& p
+			line-height: 20px
+			margin-bottom: 10px
+		& img
+			display: block
+			margin: 10px auto 10px auto
+		& a
+			display: inline-block
+			margin-top: 25px
+			@extend .link
+			font-size: 14px
+
+
+
+.all
+	padding-top: 20px
+	padding-bottom: 50px
+	border-bottom: 1px solid #d2dfe5
+	display: none
+	&__table
+		display: table
+		width: 100%
+		border-collapse: collapse
+
+	&__head-row
+		display: table-row
+		height: 32px
+		background-color: #edf3f6
+		border-radius: 5px
+	&__head-cell
+		font-size: 12px
+		color: #484848
+		font-weight: 700
+		display: table-cell
+		vertical-align: middle
+	&__cell
+		display: table-cell
+		vertical-align: top
+		padding-bottom: 12px
+		//outline: 1px solid red
+		&_source
+			width: 13%
+			padding-left: 13px
+		&_offer
+			padding-left: 9px
+			width: 34%
+		&_special
+			width: 13%
+			padding-left: 7px
+		&_del
+			width: 15%
+			padding-left: 13px
+		&_evac
+			width: 13%
+		&_price
+			padding-left: 5px
+	&__row
+		min-height: 97px
+		border-bottom: 1px dashed #d2dfe5
+		display: table-row
+	&__rating
+		+clr
+		margin-top: 26px
+	&__source-link
+		display: inline-block
+		margin-top: 5px
+	&__product
+		padding-top: 10px
+	&__del-price
+		color: #242424
+		font-weight: 700
+		margin-top: 17px
+		line-height: 18px
+	&__del-date
+		color: #cdcdcd
+		font-size: 12px
+		line-height: 18px
+	&__evac-items
+		color: #242424
+		line-height: 18px
+		margin-top: 17px
+	&__price
+		color: #1f1f23
+		line-height: 24px
+		font-size: 20px
+		font-weight: 700
+		margin-top: 13px
+		& span
+			font-size: 18px
+			font-weight: 400
+			margin-left: 3px
+	&__buy-btn
+		margin-top: 3px
+	&__special
+		margin-top: 13px
+
+
+
+.also
+	display: none
+	padding-top: 20px
+	padding-bottom: 40px
+	border-bottom: 1px solid #d2dfe5
+	&__sort-btns
+		margin-top: 5px
+		margin-bottom: 13px
+
+
+
+
+.also-slider
+	position: relative
+	margin: 0 -12px
+	&__prev
+		left: -10px
+	&__next
+		right: -10px
+
+.to-read
+	position: relative
+	&__inner
+		+inner
+		+padding
+
+
+	&__date
+		font-size: 12px
+		color: $gray
+		&:after
+			content: '|'
+			display: inline-block
+			margin-left: 3px
+			margin-right: 3px
+			font-size: 12px
+			color: $gray
+	&__view-counter
+		@extend .to-read__date
+	&__intro-link
+		font-size: 12px
+	&__main
+		padding-bottom: 40px
+		+clr
+	&__box
+		float: left
+		width: 875px
+	&__content
+		margin-top: 24px
+		& h6
+			@extend .heading
+			padding-bottom: 19px
+		& p
+			line-height: 20px
+			margin-bottom: 15px
+		& img
+			display: block
+			margin: 0 auto 45px auto
+		& div
+			padding-left: 15px
+			margin-bottom: 35px
+			& img
+				margin: 18px 10px 0 0
+				display: inline-block
+				vertical-align: middle
+			& p
+				display: inline-block
+				max-width: 450px
+				vertical-align: middle
+		& ul
+			@extend .circle-list
+			margin-bottom: 15px
+
+		& table
+			width: 550px
+			border-collapse: collapse
+			margin-bottom: 15px
+
+			& tr
+				border-bottom: 1px solid #d2dfe5
+				&:first-of-type
+					background-color: #f6f6f6
+			& th
+				padding: 5px 0
+				text-align: left
+				color: #616161
+			& td
+				padding: 5px 0
+				text-align: left
+				width: 50%
+
+	&__aside
+		float: right
+		max-width: 222px
+		padding-top: 13px
+	&__aside-heading
+		padding-bottom: 19px
+
+
+
+.cart
+	width: 594px
+	border-radius: 5px
+	box-shadow: 0 0 10px rgba(2, 3, 3, 0.39)
+	background-color: white
+
+	margin: 100px auto
+	padding: 13px 0
+	position: relative
+
+
+
+	&__heading
+		margin-left: 24px
+	&__close
+		position: absolute
+		top: 8px
+		right: 8px
+		z-index: 1
+	&__row
+
+		vertical-align: top
+		margin-top: 12px
+		padding: 0 0 7px 24px
+		border-bottom: 1px solid #d2dfe5
+	&__row-delete
+		margin-right: 8px
+		position: relative
+		top: -9px
+
+	&__product
+		display: inline-block
+		vertical-align: top
+	&__counter
+		display: inline-block
+		margin-top: 10px
+		margin-right: 20px
+	&__counter-btn
+		width: 18px
+		height: 18px
+		background-color: #eee
+		border-radius: 3px
+		position: relative
+		vertical-align: middle
+
+	&__decr
+		@extend .cart__counter-btn
+		&:after
+			+pseudo
+			position: absolute
+			+s(minus)
+			left: 50%
+			top: 50%
+			margin-left: -5px
+			margin-top: -1px
+	&__incr
+		@extend .cart__counter-btn
+		&:after
+			@extend .cart__decr:after
+			+s(plus)
+			margin-left: -5px
+			margin-top: -5px
+	&__ammount
+		width: 50px
+		vertical-align: middle
+		text-align: center
+	&__price-wrap
+		display: inline-block
+		vertical-align: text-top
+	&__price
+		font-weight: 700
+		margin-bottom: 5px
+		display: inline-block
+	&__curr
+		font-weight: 400
+	&__cashback-text
+		color: $gray
+		font-size: 11px
+	&__cashback-ammount
+		color: #105ebe
+		font-size: 12px
+		font-weight: 700
+	&__hint
+		margin-left: 5px
+	&__content
+		text-align: center
+		padding: 0 20px
+	&__total-sum
+		@extend .heading
+		padding-bottom: 6px
+		display: inline-block
+		margin-top: 15px
+		&:before
+			+pseudo
+			+s(cart)
+			left: -40px
+			top: 0
+			margin-right: 10px
+			position: absolute
+	&__total-cashback-sum
+		color: #242424
+	&__order-btn
+		width: 229px
+		height: 38px
+		line-height: 38px
+		background-color: #ffd800
+		border-radius: 5px
+		font-size: 20px
+		display: block
+		margin: 16px auto 0 auto
+	&__continue
+		display: inline-block
+		margin-top: 19px
+		font-size: 14px
+	&__out-text
+		color: #bebebe
+		font-size: 11px
+		margin-top: 8px
+//595
+
+.photo-holder
+	position: relative
+
+
+.photo
+	width: 1002px
+	background-color: white
+	border-radius: 5px
+	box-shadow: 0 0 10px rgba(2, 3, 3, 0.39)
+	position: absolute
+	top: 50%
+	left: 50%
+	margin-top: -246px
+	margin-left: -501px
+	padding: 10px 22px 80px 22px
+	+clr
+	&__heading
+		padding-bottom: 5px
+	&__close
+		position: absolute
+		top: 10px
+		right: 10px
+	&__slider
+		width: 560px
+		height:  295px //
+		position: relative
+		margin-top: 65px
+		float: left
+
+	&__slider-item
+		display: block
+		margin: 0 auto
+		width: 425px
+		height: 295px
+	&__content
+		float: right
+		width: 386px
+	&__slider-items
+		margin-top: 22px
+		font-size: 0
+	&__slider-preview-wrap
+		width: 90px
+		height: 68px
+		border: 1px solid #d2dfe5
+		padding-top: 5px
+		margin-right: 15px
+		margin-bottom: 12px
+		display: inline-block
+		&.is-active
+			border: 2px solid #ffd800
+	&__slider-preview
+		max-width: 80px
+		max-height: 60px
+		display: block
+		margin: 0 auto
+
+
+.choose
+	position: relative
+	&__inner
+		+inner
+		+padding
+		outline:  1px solid red
+		height: 600px //
+	&__title
+		padding-bottom: 15px
+	&__main
+		+clr
+	&__aside
+		float: left
+		width: 222px
+	&__choosed
+		margin-top: 20px
+	&__params
+		margin-top: 20px
+
+
+
+
+.ch-added
+	width: 222px
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	padding: 5px 0 18px 10px
+	&__title
+
+		margin-bottom: 20px
+	&__row
+		font-size: 0
+		margin-bottom: 20px
+
+	&__delete
+		display: inline-block
+		vertical-align: top
+		margin-right: 3px
+		position: relative
+		top: 3px
+
+	&__img
+		display: inline-block
+		vertical-align: top
+		margin-right: 10px
+	&__link
+		display: inline-block
+		vertical-align: top
+		font-size: 12px
+		width: 140px
+	&__compare
+		display: inline-block
+		margin-right: 6px
+		margin-left: 8px
+		padding: 0 10px
+	&__btns-wrap
+		margin-top: -5px
+
+
+
+
+.choosed
+	width: 222px
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	padding: 5px 0 9px 10px
+	&__block-name
+		margin-bottom: 10px
+	&__row
+		font-size: 0
+	&__delete
+		display: inline-block
+		vertical-align: middle
+		margin-right: 9px
+	&__key
+		font-size: 12px
+		line-height: 22px
+		display: inline-block
+		vertical-align: middle
+	&__value
+		color: $gray
+		margin-left: 3px
+	&__reset-btn
+		margin-top: 11px
+
+
+.params
+	width: 222px
+	height: 636px
+	border: 1px solid #d2dfe5
+	border-radius: 5px
+	background-color: #f8f8f8
+	padding: 5px 10px 0 10px
+	&__block-name
+		margin-bottom: 16px
+	&__text
+		font-weight: 700
+		color: #4c4c4c
+		font-size: 12px
+	&__range-wrap
+		outline: 1px solid red
+	&__range
+		margin-top: 20px
+	&__row
+
+
+
+#range
+	background: #eaeaea

@@ -1,0 +1,63 @@
+extends _layout
+block title
+	title contacts
+
+
+
+block content
+	include _header
+	include _intro
+	include _menu
+	+hint-block('Получить скидочную карту')
+	section.reg
+		+card
+		.reg__inner
+			ul.breadcrumbs
+				li: a(href="#") Главная
+			h4.title Регистрация нового покупателя и дисконтной карты CashBack
+			.reg__content
+				.reg__box
+					.reg__user-img(role="img")
+					.reg__form-wrap
+						.form.reg__form
+							form.form__main
+								p Имя
+								.input-wrap.form__name-wrap
+									+inputError
+									input.input-text.form__name(type="text" placeholder="Имя")
+								.input-wrap.form__surname-wrap
+									+inputError
+									input.input-text.form__surname(type="text" placeholder="Фамилия")
+								p Телефон
+									.input-wrap.form__tel-wrap
+										+inputError
+										input.input-text.form__tel(type="tel" placeholder="(___) - ___ - __ - __")
+								p Электронная почта #[span(class="required") *]
+								.input-wrap.form__email-wrap
+									+inputError
+									input.input-text.form__email(type="email")
+
+								p Придумайте себе пароль #[span(class="required") *]
+									.input-wrap.form__pass-wrap
+										+inputError
+										input.input-text.form__pass(type="text" placeholder="пароль")
+									.input-wrap.form__pass-repeat-wrap
+										+inputError
+										input.input-text.form__pass-repeat(type="text" placeholder="повторите пароль")
+
+
+								input.btn.form__submit.reg__form-submit(type="submit" value="Зарегистрироваться")
+						h6.heading Войти через социальные сети:
+						+socials('reg__socials')
+				.reg__text-block
+					h6.heading Для чего нужна регистрация?
+					ul.circle-list
+						li  Вы будете получать скидки (cashback - возврат на счёт)
+						li  Вы будете тратить меньше времени на оформление заказа
+						li  Сможете хранить несколько адресов доставки
+						li  Отслеживать состояние заказов.
+					h6.heading.reg__heading Уникальная услуга от SKIDKA -виртуальная дисконтная карта
+					p Ваш номер телефона = № дисконтной карты.Карта всегда с Вами в телефоне, невозможно потерять или забыть номер.
+					.reg__discount-card(role="img")
+
+	include _footer

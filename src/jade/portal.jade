@@ -1,0 +1,91 @@
+extends _layout
+block title
+   title portal
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.portal
+      +card
+      .portal__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+         h4.title.portal__title Аудио-видео техника
+         .portal__content
+            +aside-nav('portal__aside-nav')
+            .portal__box
+
+
+               +slider('portal__slider')
+               .portal__items-wrap
+                  +catItem('3D LED телевизоры')
+                  +catItem('3D Плазменные телевизоры')
+                  +catItem('LCD телевизоры')
+                  +catItem('3D LED телевизоры')
+
+                  +catItem('3D LED телевизоры')
+
+                  .cat-item
+                     img.cat-item__img(src="img/cat-item1.jpg")
+                     a(href="#").cat-item__link 3D Плазменные телевизоры
+                     ul.list.list_cat-item
+                        li: a(href="#") LG
+                        li: a(href="#") PANASONIC
+                        li: a(href="#") Philips
+                        li: a(href="#") Samsung
+                        li: a(href="#") Sharp
+                        li: a(href="#") Sony
+                        li: a(href="#") LG
+                        li: a(href="#") Panasonic
+
+                  +catItem('LCD телевизоры')
+                  +catItem('3D LED телевизоры')
+
+                  +catItem('3D LED телевизоры')
+                  +catItem('3D Плазменные телевизоры')
+                  +catItem('LCD телевизоры')
+                  +catItem('3D LED телевизоры')
+
+
+
+
+
+               .we-recomend
+                  h4.title Рекомендуем
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+                  +item('item_inline')
+
+
+               .portal__article-wrap
+                   h4.title Как выбрать телевизор?
+                  +article
+
+         include _recently
+         .portal__text-wrap
+            p.portal__text Совсем недавно производители плоскопанельных HDTV презентовали новые плазменные и жидкокристаллические 3D телевизор.
+
+            p.portal__text Здесь Вы найдете ответы на все интересующие вопросы, что и поможет Вам выбрать самый оптимальный вариант плазменного 3D телевизора. Мы обратим Ваше внимание на наиболее важные аспекты, а также, на что стоит обратит больше внимание при выборе телевизора 3d.
+
+            p.portal__text Что же все-таки такое 3D телевизор?
+               br
+               | Традиционно 3D телевизором называют любой телевизор, который способный передавать изображение в 3 измерениях. Современным телевизорам помогают
+               br
+               | в этом новые 3D технологий, с помощью которых зрители могут представлять различные изображения.
+            p.portal__text Технология работы таких телевизоров заключается в том, что оба глаза видят одно изображение по-разному. Процесс подобен реальной жизни - наш мозг, совмещает 2 изображения, и таким образом мы видим изображение в трехмерном измерении.
+            p.portal__text Как функционирует 3D телевизор?
+               br
+               | В отличии от жк-телевизоров, технология работы 3д телевизора достаточно сложная. Производители используют разные технологии видеовоспроизведения, чтобы достичь 3D эффекта. Самыми распространенными телевизионными 3D технологиями для достижения 3D эффекта являются 3D очки. Эти очки настолько удобны и комфортны, что многие, погружаясь в 3D среду, забывают об их наличии.
+
+   include _footer
+
+
+
+
+

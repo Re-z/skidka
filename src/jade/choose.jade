@@ -1,0 +1,65 @@
+extends _layout
+block title
+   title choose
+
+
+
+block content
+   include _header
+   include _intro
+   include _menu
+   +hint-block('Получить скидочную карту')
+
+   section.choose
+      +card
+      .choose__inner
+         ul.breadcrumbs
+            li: a(href="#") Главная
+            li: a(href="#") Аудио-видео техника
+         h4.title.choose__title 3D LED телевизоры
+         .choose__main
+            aside.choose__aside
+               .ch-added
+                  h6.ch-added__title.block-name Добавлено к сравнению
+                  mixin chAddedRow
+                     .ch-added__row
+                        button.delete.ch-added__delete
+                        img.ch-added__img(src="img/small-item-img.png")
+                        a.ch-added__link.blue-link(href="#") Телевизор <br> Samsung UE78HU9000
+                  +chAddedRow
+                  +chAddedRow
+                  +chAddedRow
+
+                  .ch-added__btns-wrap
+                     button.action-btn.ch-added__compare Сравнить
+                     button.link Очистить
+
+               .choosed.choose__choosed
+                  h6.block-name.choosed__block-name Вы выбрали
+                  mixin choosedRow(key, value)
+                     .choosed__row
+                        button.delete.choosed__delete
+                        p.choosed__key=key
+                           span.choosed__value=value
+
+                  +choosedRow('Цена:', '1258 - 100 000')
+                  +choosedRow('Производитель:', 'Samsung')
+                  +choosedRow('Диагональ экрана:', '22"')
+
+                  button.choosed__reset-btn.link Сбросить фильтры
+
+               .params.choose__params
+                  h6.block-name.params__block-name Подбор по параметрам
+                  .params__range-wrap
+                     p.params__text Цена грн:
+                     #range.params__range
+                     .params__range-row
+                        span
+                        input(type="text" placeholder="1258").input-text.params__range-value
+                        span
+                        input(type="text" placeholder="100 000").input-text.params__range-value
+
+
+
+
+

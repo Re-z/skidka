@@ -1,0 +1,52 @@
+//start item-chars
+.item-chars
+   .item-chars__title-wrap
+      h4.title Характеристики
+   .item-chars__content
+      .item-chars__tables
+         .item-chars__table
+
+            mixin itemCharsRow(key, value, showHint)
+               if(showHint===true)
+                  .item-chars__row
+                     .item-chars__key
+                        p= key
+                        +hint('item-chars__hint')
+                     .item-chars__value
+                        p= value
+               else
+                  .item-chars__row
+                     .item-chars__key
+                        p= key
+                     .item-chars__value
+                        p= value
+
+            +itemCharsRow('LED-подсветка', 'Да', true)
+            +itemCharsRow('Диагональ	', '19 дюйм', true)
+            +itemCharsRow('Формат телевизора', '16:9')
+            +itemCharsRow('Разрешение	', '1366x768 pix')
+            +itemCharsRow('Поддержка HDTV', 'Да')
+            +itemCharsRow('Smart TV (доступ в Интернет)', 'Нет')
+            +itemCharsRow('Частота развертки', '100 Гц')
+            +itemCharsRow('TV-тюнер (аналоговый)', 'Да')
+
+         .item-chars__table.item-chars__table_right
+            +itemCharsRow('DVB-C', 'Да')
+            +itemCharsRow('Поддержка DVB-C MPEG4', 'Да')
+            .item-chars__row
+               .item-chars__key
+                  p Поддержка телевизионных стандартов
+               .item-chars__value
+                  p PAL
+                  p SECAM
+                  p NTSC
+
+            +itemCharsRow('DVB-T2', 'Да')
+            +itemCharsRow('Ширина', '447 мм')
+            +itemCharsRow('Высота', '283 мм')
+            +itemCharsRow('Глубина', '47 мм')
+
+
+
+      a.link.item-chars__more(href="#") Все характеристики
+//end item chars

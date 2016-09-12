@@ -1,0 +1,28 @@
+extends _layout
+block title
+	title 404
+
+
+
+block content
+	include _header
+	include _intro
+	include _menu
+	+hint-block('Получить скидочную карту')
+
+	section.p404
+		+card
+		.p404__inner
+			ul.breadcrumbs
+				li: a(href="") Главная
+
+			h4.title Страница не найдена
+			.p404__content
+				.p404__box
+					.p404__img-wrap
+						.p404__img(role="img")
+						p.p404__text Возможно, эта страница была удалена или допущена ошибка в адресе. <br> Попробуйте перейти #[a(class="simple-link" href="#")на главную] или воспользоваться поиском
+				.p404__form-wrap
+					include _form
+	include _footer
+

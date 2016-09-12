@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.theme.min.css"><link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <!--start header-->
+    <header class="header">
+      <div class="header__inner">
+        <button class="schedule-btn">Режим работы</button>
+        <nav class="nav">
+          <ul>
+            <li><a href="#" title="Доставка">Доставка</a></li>
+            <li><a href="#" title="Оплата">Оплата</a></li>
+            <li><a href="#" title="Гарантия и сервис ">Гарантия и сервис </a></li>
+            <li><a href="#" title="Контакты">Контакты</a></li>
+          </ul>
+        </nav><a href="#" class="cabinet-btn">Личный кабинет</a>
+        <div class="schedule">
+          <div class="schedule__item">
+            <h6 class="subtitle call-center-ico">Call-центр:</h6>
+            <p class="schedule__text">Понедельник - воскресенье</p>
+            <p class="schedule__text">с 9:00 до 21:00</p>
+          </div>
+          <div class="schedule__item">
+            <h6 class="subtitle service-ico">Сервисный отдел:</h6>
+            <p class="schedule__text">Понедельник - пятница</p>
+            <p class="schedule__text">с 9:00 до 18:00</p>
+          </div>
+          <div class="schedule__close close"></div>
+        </div>
+      </div>
+      <!--end header-->
+    </header>
+    <!--start intro-->
+    <section class="intro">
+      <div class="intro__inner"><a href="index.html" title="" class="logo"></a>
+        <div class="tel">
+          <p class="tel__main">(044) 495-71-90
+            <button class="tel__arrow"></button>
+          </p>
+          <button class="tel__callback link">Перезвоните мне</button>
+          <div class="tel__popup">
+            <p class="tel-number tel-number_city">(044) 233 76 90</p>
+            <p class="tel-number tel-number_life">(044) 233 76 90</p>
+            <p class="tel-number tel-number_kyivstar">(044) 233 76 90</p>
+          </div>
+          <div class="callback">
+            <h6 class="callback__title subtitle">Заказ обратного звонка</h6>
+            <p class="callback__text">Оставьте номер вашего телефона и наш оператор перезвонит вам в течении часа.</p>
+            <form class="callback__form"></form>
+            <p>Ваше имя:</p>
+            <div class="input-wrap is-error callback__name-wrap">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+              <input type="text" class="callback__name input-text">
+            </div>
+            <p>Ваш телефон: <span class="required">*</span></p>
+            <div class="input-wrap is-error">
+              <p class="input-error-text">Поле необходимо заполнить</p><span>+38</span>
+              <input pattern="^[ 0-9]+$" type="tel" required placeholder="(___) ___- __-__" class="callback__tel input-text">
+            </div>
+            <input type="submit" value="Жду звонка" class="callback__submit btn">
+            <div class="callback__close close"></div>
+          </div>
+        </div>
+        <form class="search">
+          <div class="input-wrap search__query-wrap">
+            <p class="input-error-text">Поле необходимо заполнить</p>
+            <input type="text" placeholder="Поиск товаров" class="search__query input-text">
+          </div>
+          <input type="submit" value="Найти" class="search__submit btn">
+        </form>
+        <div class="in-cart">
+          <p class="in-cart__title">В корзине</p>
+          <p class="in-cart__text">1 товар - 18 799 грн</p>
+          <p class="in-cart__text is-empty">на сумму 0 грн</p><a href="#" title="Оформить заказ" class="link">Оформить заказ</a>
+        </div>
+      </div>
+    </section>
+    <!--end intro-->
+    <!--start menu-->
+    <section class="menu">
+      <div class="menu__inner-wrap">
+        <div class="menu__inner">
+          <ul class="menu__list">
+            <li class="menu__item"><span class="menu__trigger">Все товары</span></li>
+            <li class="menu__item"><span class="menu__trigger">Мобильные</span></li>
+            <li class="menu__item"><span class="menu__trigger menu__trigger_technic">Бытовая техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Аудио-видео техника</span></li>
+            <li class="menu__item"><span class="menu__trigger">Магазины с CashBack</span></li>
+            <li class="menu__item"><span class="menu__trigger">Пригласи друга</span></li>
+            <li class="menu__item"><span class="menu__trigger is-active">Акции</span></li>
+          </ul>
+          <!--start dropdown-->
+          <div class="dropdown">
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Аппараты для газирования">Аппараты для газирования</a></li>
+                  <li><a href="#" title="Аэрогрили">Аэрогрили</a></li>
+                  <li><a href="#" title="Блендеры">Блендеры</a></li>
+                  <li><a href="#" title="Бутербродницы">Бутербродницы</a></li>
+                  <li><a href="#" title="Вафельницы">Вафельницы</a></li>
+                  <li><a href="#" title="Весы кухонные">Весы кухонные</a></li>
+                  <li><a href="#" title="Грили">Грили</a></li>
+                  <li><a href="#" title="Йогуртницы и мороженицы">Йогуртницы и мороженицы</a></li>
+                  <li><a href="#" title="Кофеварки">Кофеварки</a></li>
+                  <li><a href="#" title="Кофемолки">Кофемолки</a></li>
+                  <li><a href="#" title="Кулеры для воды">Кулеры для воды</a></li>
+                  <li><a href="#" title="Кухонные комбайны">Кухонные комбайны</a></li>
+                  <li><a href="#" title="Ломтерезки">Ломтерезки</a></li>
+                  <li><a href="#" title="Маринаторы">Маринаторы</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Миксеры">Миксеры</a></li>
+                  <li><a href="#" title="Мультиварки">Мультиварки</a></li>
+                  <li><a href="#" title="Мясорубки">Мясорубки</a></li>
+                  <li><a href="#" title="Настольные плиты">Настольные плиты</a></li>
+                  <li><a href="#" title="Пароварки">Пароварки</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col">
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Крупная бытовая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Морозильные камеры">Морозильные камеры</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Сушильные автоматы">Сушильные автоматы</a></li>
+                  <li><a href="#" title="Плиты">Плиты</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Профессиональная техника">Профессиональная техника</a></li>
+                  <li><a href="#" title="Аксессуары к кбт">Аксессуары к кбт</a></li>
+                </ul>
+              </div>
+              <div class="dropdown__category">
+                <h5 class="dropdown__title">Встраиваемая техника</h5>
+                <ul class="dropdown__list">
+                  <li><a href="#" title="Духовые шкафы">Духовые шкафы</a></li>
+                  <li><a href="#" title="Варочные поверхности">Варочные поверхности</a></li>
+                  <li><a href="#" title="Готовые комплекты">Готовые комплекты</a></li>
+                  <li><a href="#" title="Вытяжки">Вытяжки</a></li>
+                  <li><a href="#" title="Измельчители пищевых отходов">Измельчители пищевых отходов</a></li>
+                  <li><a href="#" title="Холодильники">Холодильники</a></li>
+                  <li><a href="#" title="Стиральные машины">Стиральные машины</a></li>
+                  <li><a href="#" title="Посудомоечные машины">Посудомоечные машины</a></li>
+                  <li><a href="#" title="Морозильники">Морозильники</a></li>
+                  <li><a href="#" title="Микроволновые печи">Микроволновые печи</a></li>
+                  <li><a href="#" title="Аксессуары к вбт">Аксессуары к вбт</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown__col"><a href="#" title="" style="background-image: url(https://placebear.com/240/450)" class="dropdown__banner"></a></div>
+          </div>
+        </div>
+      </div>
+      <!--end dropdown-->
+    </section>
+    <!--end menu-->
+        <section class="hint-block"></section>
+        <div class="hint-block__inner-wrap">
+          <div class="hint-block__inner"><a href="#" title="test" class="hint-block__text">Получить скидочную карту</a></div>
+        </div>
+    <section class="reviews">
+          <div class="card"><a href="#" class="card__img"></a>
+            <button class="card__close"></button>
+          </div>
+      <div class="reviews__inner">
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+        </ul>
+        <h4 class="title reviews__title">Статьи и обзоры</h4>
+        <div class="reviews__content">
+          <aside class="reviews__aside">
+            <ul class="reviews__category-list">
+              <li>
+                <input type="radio" id="articles__1" name="reviews__category-list" checked class="radio">
+                <label for="articles__1" class="radio-label">Все материалы</label><a href="#">(72)</a>
+              </li>
+              <li>
+                <input type="radio" id="articles__2" name="reviews__category-list" class="radio">
+                <label for="articles__2" class="radio-label">Новости компании</label><a href="#">(12)</a>
+              </li>
+              <li>
+                <input type="radio" id="articles__3" name="reviews__category-list" class="radio">
+                <label for="articles__3" class="radio-label">Советы по выбору техники</label><a href="#">(12)</a>
+              </li>
+              <li>
+                <input type="radio" id="articles__4" name="reviews__category-list" class="radio">
+                <label for="articles__4" class="radio-label">Обзор новинок</label><a href="#">(12)</a>
+              </li>
+              <li>
+                <input type="radio" id="articles__5" name="reviews__category-list" class="radio">
+                <label for="articles__5" class="radio-label">Новости рынка</label><a href="#">(12)</a>
+              </li>
+            </ul>
+            <div class="subscr">
+              <h6 class="heading subscr__heading">Подпишитесь сейчас</h6>
+              <p>Узнайте о новых акциях первым</p>
+              <div class="input-wrap subscr__name-wrap">
+                    <p class="input-error-text">Поле необходимо заполнить</p>
+                <input type="text" placeholder="Ваше имя" class="input-text">
+              </div>
+              <div class="input-wrap subscr__email-wrap">
+                    <p class="input-error-text">Поле необходимо заполнить</p>
+                <input type="email" placeholder="Ваша електронная почта" class="input-text">
+              </div>
+              <input type="submit" value="Подписаться" class="btn subscr__submit">
+              <h6 class="heading subscr__heading">Мы в социальных сетях</h6>
+                  <ul class="socials subscr__socials">
+                    <li><a href="#" title="vk" class="socials__vk"></a></li>
+                    <li><a href="#" title="goo" class="socials__goo"></a></li>
+                    <li><a href="#" title="fb" class="socials__fb"></a></li>
+                  </ul>
+            </div>
+          </aside>
+          <div class="reviews__articles">
+                <article class="article"><img src="http://placecage.com/303/182">
+                  <div>
+                    <h4>Как выбрать телевизор?</h4>
+                    <p>Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.</p>
+                  </div>
+                  <footer>
+                        <ul class="share article__share">
+                          <li>Рекомендуй друзьям:</li>
+                          <li><a href="#" class="share__vk"></a></li>
+                          <li><a href="#" class="share__od"></a></li>
+                          <li><a href="#" class="share__fb"></a></li>
+                          <li><a href="#" class="share__tw"></a></li>
+                          <li><a href="#" class="share__goo"></a></li>
+                          <li><a href="#" class="share__mail"></a></li>
+                          <li><a href="#" class="share__email"></a></li>
+                          <li><a href="#" class="share__print"></a></li>
+                          <li><a href="#" class="share__more"></a></li>
+                        </ul><a href="#" class="link article__footer-link">Почитать</a>
+                  </footer>
+                </article>
+                <article class="article"><img src="http://placecage.com/303/182">
+                  <div>
+                    <h4>Как выбрать холодильник?</h4>
+                    <p>Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.</p>
+                  </div>
+                  <footer>
+                        <ul class="share article__share">
+                          <li>Рекомендуй друзьям:</li>
+                          <li><a href="#" class="share__vk"></a></li>
+                          <li><a href="#" class="share__od"></a></li>
+                          <li><a href="#" class="share__fb"></a></li>
+                          <li><a href="#" class="share__tw"></a></li>
+                          <li><a href="#" class="share__goo"></a></li>
+                          <li><a href="#" class="share__mail"></a></li>
+                          <li><a href="#" class="share__email"></a></li>
+                          <li><a href="#" class="share__print"></a></li>
+                          <li><a href="#" class="share__more"></a></li>
+                        </ul><a href="#" class="link article__footer-link">Почитать</a>
+                  </footer>
+                </article>
+                <article class="article"><img src="http://placecage.com/303/182">
+                  <div>
+                    <h4>Как правильно выбрать шампунь</h4>
+                    <p>Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.</p>
+                  </div>
+                  <footer>
+                        <ul class="share article__share">
+                          <li>Рекомендуй друзьям:</li>
+                          <li><a href="#" class="share__vk"></a></li>
+                          <li><a href="#" class="share__od"></a></li>
+                          <li><a href="#" class="share__fb"></a></li>
+                          <li><a href="#" class="share__tw"></a></li>
+                          <li><a href="#" class="share__goo"></a></li>
+                          <li><a href="#" class="share__mail"></a></li>
+                          <li><a href="#" class="share__email"></a></li>
+                          <li><a href="#" class="share__print"></a></li>
+                          <li><a href="#" class="share__more"></a></li>
+                        </ul><a href="#" class="link article__footer-link">Почитать</a>
+                  </footer>
+                </article>
+                <article class="article"><img src="http://placecage.com/303/182">
+                  <div>
+                    <h4>Что важнее бальзам или кондиционер</h4>
+                    <p>Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.</p>
+                  </div>
+                  <footer>
+                        <ul class="share article__share">
+                          <li>Рекомендуй друзьям:</li>
+                          <li><a href="#" class="share__vk"></a></li>
+                          <li><a href="#" class="share__od"></a></li>
+                          <li><a href="#" class="share__fb"></a></li>
+                          <li><a href="#" class="share__tw"></a></li>
+                          <li><a href="#" class="share__goo"></a></li>
+                          <li><a href="#" class="share__mail"></a></li>
+                          <li><a href="#" class="share__email"></a></li>
+                          <li><a href="#" class="share__print"></a></li>
+                          <li><a href="#" class="share__more"></a></li>
+                        </ul><a href="#" class="link article__footer-link">Почитать</a>
+                  </footer>
+                </article>
+                <article class="article"><img src="http://placecage.com/303/182">
+                  <div>
+                    <h4>Как выбрать соковыжималку?</h4>
+                    <p>Прежде чем совершить эту дорогую покупку, каждый человек хочет быть уверен, что выбирает самый лучший и качественный прибор. Многие люди, желающие купить телевизор, стараются приобрести привлекательного вида модель, которая бы максимально соответствовала представлениям о хорошем качестве. Совершенно естественно, что далеко не все покупатели могут угнаться за прогрессом и при выборе телевизоров нового поколения просто теряются в совершенно неизвестных им терминах и понятиях. В этой статье мы поможем Вам, объяснив, на что стоит в первую очередь обращать внимание при покупке телевизора.</p>
+                  </div>
+                  <footer>
+                        <ul class="share article__share">
+                          <li>Рекомендуй друзьям:</li>
+                          <li><a href="#" class="share__vk"></a></li>
+                          <li><a href="#" class="share__od"></a></li>
+                          <li><a href="#" class="share__fb"></a></li>
+                          <li><a href="#" class="share__tw"></a></li>
+                          <li><a href="#" class="share__goo"></a></li>
+                          <li><a href="#" class="share__mail"></a></li>
+                          <li><a href="#" class="share__email"></a></li>
+                          <li><a href="#" class="share__print"></a></li>
+                          <li><a href="#" class="share__more"></a></li>
+                        </ul><a href="#" class="link article__footer-link">Почитать</a>
+                  </footer>
+                </article>
+                <div class="pagination"><a href="#" class="prev-medium pagination__prev"></a><a href="#" class="next-medium pagination__next"></a>
+                  <ul class="pagination__list">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#" class="is-active">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">56</a></li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--start footer-->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__col footer__col_shop">
+          <h6 class="subtitle">О магазине</h6>
+          <ul class="footer__list">
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Все контакты</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+          <p class="footer__subtext">© 2008–2013 группа компаний IPC</p>
+          <p class="footer__subtext">© Skidka — зарегистрированный <br> товарный знак</p>
+        </div>
+        <div class="footer__col footer__col_buyer">
+          <h6 class="subtitle">Покупателю</h6>
+          <ul class="footer__list">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Гарантия и сервис</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Дисконтная программа</a></li>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Статьи и обзоры</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col_subscr">
+          <h6 class="subtitle">Узнайте о новостях первым</h6>
+          <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+          <form class="footer__subscription">
+            <div class="footer__email-wrap input-wrap">
+              <input type="email" placeholder="Ваша электронная почта" class="footer__email input-text">
+              <p class="input-error-text">Поле необходимо заполнить</p>
+            </div>
+            <input type="submit" value="Готово" class="footer__subscription-submit btn">
+          </form>
+          <h6 class="subtitle">Мы в социальных сетях</h6>
+          <p class="footer__text footer__text_margin">Подпишитесь на рассылку новостей и скидок</p>
+          <!--ul.socials-->
+          <!--    each item in socials-->
+          <!--        li-->
+          <!--            a(class="footer__#{item}" href="#", title="#{item}")-->
+              <ul class="socials">
+                <li><a href="#" title="vk" class="socials__vk"></a></li>
+                <li><a href="#" title="goo" class="socials__goo"></a></li>
+                <li><a href="#" title="fb" class="socials__fb"></a></li>
+              </ul>
+        </div>
+        <div class="footer__col">
+          <h6 class="subtitle">Магазинам</h6>
+          <ul class="footer__list">
+            <li><a href="#" title="О сервисе">О сервисе</a></li>
+            <li><a href="#" title="Платное продвижение">Платное продвижение</a></li>
+            <li><a href="#" title="Продвижение и сервис">Продвижение и сервис</a></li>
+            <li><a href="#" title="Описание XML">Описание XML</a></li>
+            <li><a href="#" title="Обратная связь">Обратная связь</a></li>
+          </ul>
+          <p class="footer__text footer__text_smaler">Дизайн сайта <a href="#" title="" class="footer__link">StylePix</a></p>
+          <p class="footer__text footer__text_smaler">Разработка <a href="#" title="" class="footer__link">OWOX</a></p>
+        </div>
+      </div>
+    </footer>
+    <!--end footer-->
+  </body>
+  <script src="js/app.js" async></script>
+</html>

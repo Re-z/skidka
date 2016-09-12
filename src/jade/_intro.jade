@@ -1,0 +1,41 @@
+//start intro
+section.intro
+  .intro__inner
+      a.logo(href="index.html" title="")
+      .tel
+          p.tel__main (044) 495-71-90
+              button.tel__arrow
+          button.tel__callback.link Перезвоните мне
+          .tel__popup
+              p.tel-number.tel-number_city (044) 233 76 90
+              p.tel-number.tel-number_life (044) 233 76 90
+              p.tel-number.tel-number_kyivstar (044) 233 76 90
+
+          .callback
+              h6.callback__title.subtitle Заказ обратного звонка
+              p.callback__text Оставьте номер вашего телефона и наш оператор перезвонит вам в течении часа.
+              form.callback__form
+              p Ваше имя:
+              .input-wrap.is-error.callback__name-wrap
+                  p.input-error-text Поле необходимо заполнить
+                  input.callback__name.input-text(type="text")
+              p Ваш телефон: #[span(class="required") *]
+              .input-wrap.is-error
+                  p.input-error-text Поле необходимо заполнить
+                  span +38
+                  input.callback__tel.input-text(pattern="^[ 0-9]+$" type="tel" required placeholder="(___) ___- __-__")
+              input.callback__submit.btn(type="submit" value="Жду звонка")
+              .callback__close.close
+
+      form.search
+          .input-wrap.search__query-wrap
+              p.input-error-text Поле необходимо заполнить
+              input.search__query.input-text(type="text" placeholder="Поиск товаров")
+          input.search__submit.btn(type="submit" value="Найти")
+      .in-cart
+          p.in-cart__title В корзине
+          p.in-cart__text 1 товар - 18 799 грн
+          p.in-cart__text.is-empty на сумму 0 грн
+          a.link(href="#" title="Оформить заказ") Оформить заказ
+
+ //end intro

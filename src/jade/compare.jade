@@ -1,0 +1,110 @@
+extends _layout
+block title
+	title contacts
+
+mixin charsCharValue(text)
+	.chars__cell
+		p.chars__char-value=text
+
+
+
+block content
+	include _header
+	include _intro
+	include _menu
+	+hint-block('Получить скидочную карту')
+
+	section.compare
+		+card
+		.compare__inner
+			ul.breadcrumbs
+				li: a(href="") Главная
+			h4.title.compare__title Сравнение товаров: Зеркальные фотокамеры #[span (4)]
+			.compare__heading
+				.compare__aside
+					h6.heading Ожидают сравнения:
+					ul.compare__list
+						li.compare__list-item
+							button.close.compare__list-item-close
+							a.link.compare__list-item-link(href="#") Ноутбуки (11)
+
+					+sortBtn('compare__sort-btns', 'Все характеристики', 'Только отличия' )
+				.compare__items
+					+item('item_compare')
+					+item('item_compare')
+					+item('item_compare')
+					+item('item_compare')
+			//start chars-table
+			.chars
+				h6.chars__title Основное
+				.chars__row
+					.chars__cell
+						p.chars__char-name Размеры экрана
+						+hint('chars__hint')
+					+charsCharValue('5"')
+					+charsCharValue('5"')
+					+charsCharValue('5"')
+					+charsCharValue('5"')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Количество ядер
+						+hint('chars__hint')
+					+charsCharValue('8 ядер')
+					+charsCharValue('8 ядер')
+					+charsCharValue('8 ядер')
+					+charsCharValue('8 ядер')
+				.chars__row.has-bg
+					.chars__cell
+						p.chars__char-name Операционная система
+					+charsCharValue('Android 4.4 KitKat ')
+					+charsCharValue('Android 4.4 KitKat ')
+					+charsCharValue('Android 4.4 KitKat ')
+					+charsCharValue('Android 4.4 KitKat ')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Разрешение камеры
+					+charsCharValue('13 Мпикс')
+					+charsCharValue('13 Мпикс')
+					+charsCharValue('13 Мпикс')
+					+charsCharValue('13 Мпикс')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Частота процессора
+					+charsCharValue('1,6 ГГц')
+					+charsCharValue('1,6 ГГц')
+					+charsCharValue('1,6 ГГц')
+					+charsCharValue('1,6 ГГц')
+
+			.chars
+				h6.chars__title Экран
+				.chars__row
+					.chars__cell
+						p.chars__char-name Разрешение экрана
+					+charsCharValue('1920x1080')
+					+charsCharValue('1920x1080')
+					+charsCharValue('1920x1080')
+					+charsCharValue('1920x1080')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Тип экрана
+					+charsCharValue('Аmoled (Super Amoled)')
+					+charsCharValue('Аmoled (Super Amoled)')
+					+charsCharValue('Аmoled (Super Amoled)')
+					+charsCharValue('Аmoled (Super Amoled)')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Количество цветов
+					+charsCharValue('16 миллионов')
+					+charsCharValue('16 миллионов')
+					+charsCharValue('16 миллионов')
+					+charsCharValue('16 миллионов')
+				.chars__row
+					.chars__cell
+						p.chars__char-name Дополнительно
+					+charsCharValue('FullHD Super AMOLED, Corning Gorilla Glass 3')
+					+charsCharValue('FullHD')
+					+charsCharValue('FullHD Super AMOLED')
+					+charsCharValue('FullHD Super')
+
+
+	include _footer
